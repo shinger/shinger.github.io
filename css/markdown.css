@@ -3,7 +3,7 @@
 .post-md
 {
     width: 100%;
-    font-size: 16px;
+    font-size: 16.8px;
     letter-spacing: 0;
 }
 
@@ -57,21 +57,23 @@
 {
     color: var(--font-color-2);
     box-shadow: 0 2px 0 var(--line-1);
-    transition: color ease-in-out .65s, box-shadow ease-in-out .65s;
+    /* transition: color ease-in-out .65s, box-shadow ease-in-out .65s; */
 }
 .post-md a:hover
 {
     color: var(--font-color-0);
     box-shadow: 0 2px 0 var(--font-color-0);
-    transition: color ease-in-out .65s, box-shadow ease-in-out .65s;
+    /* transition: color ease-in-out .65s, box-shadow ease-in-out .65s; */
 }
 .post-md strong
 {
-    font-weight: 700;
+    font-weight: bold;
+    font-family: LXGW WenKai Bold;
 }
 .post-md em
 {
     font-style: italic;
+
 }
 .post-md kbd
 {
@@ -127,24 +129,24 @@
     width: 100%;
 }
 
-.post-md>table
+.post-md table
 {
     width: 100%;
     text-align: left;
     border-spacing: 0;
 }
-.post-md>table th
+.post-md table th
 {
     padding: 12px 0;
     border-bottom: 2px solid var(--line-1);
 }
-.post-md>table tr:nth-child(odd) td
+.post-md table tr:nth-child(odd) td
 {
     padding: 12px 0;
     border-bottom: 1px solid var(--line-1);
     background: #fafafa;
 }
-.post-md>table tr:nth-child(even) td
+.post-md table tr:nth-child(even) td
 {
     padding: 12px 0;
     border-bottom: 1px solid var(--line-1);
@@ -154,9 +156,9 @@
 .post-md code
 {
     border-radius: 4px;
-    background: #2b2b2b;
+    background: #e4e4e4;
     padding: 2px 4px;
-    color: #f8f8f2;
+    color: #2d2d2d;
     font-size: 1rem;
 }
 
