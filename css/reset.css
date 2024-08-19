@@ -51,6 +51,13 @@ picture
     /* width: auto; */
     max-width: 100%;
     display: block;
+    margin: 0 auto;
+}
+
+center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 input,
