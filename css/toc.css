@@ -4,7 +4,7 @@
   top: 206px;
   left: 1px;
   bottom: 110px;
-  overflow-y: auto; /* 或者使用 overflow-y: scroll; */
+  /*overflow-y: auto;  或者使用 overflow-y: scroll; */
   max-height: -webkit-fill-available; /* 设置最大高度，可以根据需要进行调整 */
   position: fixed;
   scrollbar-width: thin;

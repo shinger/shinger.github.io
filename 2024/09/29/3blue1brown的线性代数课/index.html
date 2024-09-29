@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+    <meta name="description" content="3blue1brown的线性代数课" />
+    <meta name="hexo-theme-A4" content="v1.7.0" />
+    <link rel="alternate icon" type="image/webp" href="/img/favicon.webp">
+    <title>未语清 | Serene Whisper</title>
+
+    
+        
+<link rel="stylesheet" href="/css/highlight/style1.css">
+
+        
+<link rel="stylesheet" href="/css/reset.css">
+
+        
+<link rel="stylesheet" href="/css/markdown.css">
+
+        
+<link rel="stylesheet" href="/css/fonts.css">
+ 
+         <!--注意：首页既不是post也不是page-->
+        
+        
+        
+<link rel="stylesheet" href="/css/ui.css">
+ 
+        
+<link rel="stylesheet" href="/css/style.css">
+
+
+        
+            <!--返回顶部css-->
+            
+<link rel="stylesheet" href="/css/returnToTop.css">
+
+            
+<link rel="stylesheet" href="/css/unicons.css">
+
+        
+        
+            <!--目录-->
+            
+<link rel="stylesheet" href="/css/toc.css">
+
+        
+    
+
+    
+        
+<link rel="stylesheet" href="/css/returnToLastPage.css">
+
+    
+    
+   
+<link rel="stylesheet" href="/css/lightgallery.min.css">
+
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+    
+    
+
+    
+    
+
+
+
+    
+
+    
+    
+
+    
+    
+    
+    <body>
+        <script src="/js/darkmode-js.min.js"></script>
+        
+        <script>
+            const options = {
+                bottom: '53px', // default: '32px'
+                right: 'unset', // default: '32px'
+                left: '42px', // default: 'unset'
+                time: '0.3s', // default: '0.3s'
+                mixColor: '#fff', // default: '#fff'
+                backgroundColor: ' #e4e4e4 ',  // default: '#fff'
+                buttonColorDark: '#100f2c',  // default: '#100f2c'
+                buttonColorLight: '#fff', // default: '#fff'
+                saveInCookies: true, // default: true,
+                label: '🌓', // default: ''
+                autoMatchOsTheme: true // default: true
+            }
+            const darkmode = new Darkmode(options);
+            darkmode.showWidget();
+        </script>
+        
+        
+            <div class="left-toc-container">
+                <nav id="toc" class="bs-docs-sidebar"></nav>
+            </div>
+        
+        <div class="paper">
+            
+            
+            
+            
+                <div class="shadow-drop-2-bottom paper-main">
+                    
+
+
+<div class="header">
+    <div class="header-container">
+        <img style="
+        width: 56px;
+        height: auto;" alt="^-^" cache-control="max-age=86400" class="header-img" src="/img/favicon.webp" width="10%"></img>
+        <div class="header-content">
+            <a class="logo" href="/">未语清</a> 
+            <span class="description"></span> 
+        </div>
+        
+    </div>
+    
+   
+    <ul class="nav">
+        
+            
+                <li><a href="/">首页</a></li>
+            
+        
+            
+                <li><a href="/list/">文章</a></li>
+            
+        
+            
+                <li><a href="/categories/">分类</a></li>
+            
+        
+            
+                <li><a href="/works/">作品</a></li>
+            
+        
+            
+                <li><a href="/times/">时光</a></li>
+            
+        
+    </ul>
+</div> 
+        
+                    
+                    
+
+                    
+                    
+                    
+                    <!--说明是文章post页面-->
+                    
+                        <div class="post-main">
+
+    
+        <div class="post-main-title">
+            3blue1brown的线性代数课
+        </div>
+      
+    
+
+    <div class="post-md">
+        
+            
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E5%90%91%E9%87%8F%E7%9A%84%E4%B8%89%E4%B8%AA%E8%A7%86%E8%A7%92"><span class="post-toc-text">向量的三个视角</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E5%90%91%E9%87%8F%E6%93%8D%E4%BD%9C"><span class="post-toc-text">向量操作</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E5%9F%BA%E5%90%91%E9%87%8F"><span class="post-toc-text">基向量</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E7%BA%BF%E6%80%A7%E7%BB%84%E5%90%88%EF%BC%88Linear-combination%EF%BC%89"><span class="post-toc-text">线性组合（Linear combination）</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E8%B7%A8%E5%BA%A6%EF%BC%88Span%EF%BC%89"><span class="post-toc-text">跨度（Span）</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E4%B8%89%E7%BB%B4%E7%A9%BA%E9%97%B4%E4%B8%8A%E7%9A%84%E8%B7%A8%E5%BA%A6"><span class="post-toc-text">三维空间上的跨度</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E7%BA%BF%E6%80%A7%E7%9B%B8%E5%85%B3%E7%9A%84%E4%B8%89%E7%A7%8D%E6%80%9D%E8%80%83%E6%96%B9%E5%BC%8F%EF%BC%9A"><span class="post-toc-text">线性相关的三种思考方式：</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2"><span class="post-toc-text">线性变换</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E5%9B%BE%E5%83%8F%E7%9A%84%E7%90%86%E8%A7%A3%E8%BF%87%E7%A8%8B"><span class="post-toc-text">图像的理解过程</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E5%8F%98%E6%8D%A2%E4%BF%9D%E6%8C%81%E7%BA%BF%E6%80%A7%E7%9A%84%E8%A6%81%E6%B1%82"><span class="post-toc-text">变换保持线性的要求</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E6%95%B0%E5%AD%A6%E5%BD%93%E4%B8%AD%E7%9A%84%E7%90%86%E8%A7%A3"><span class="post-toc-text">数学当中的理解</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E4%B8%89%E4%B8%AA%E4%BE%8B%E5%AD%90"><span class="post-toc-text">三个例子</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E4%B8%A4%E4%B8%AA%E6%80%A7%E8%B4%A8"><span class="post-toc-text">两个性质</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E7%BA%BF%E6%80%A7%E5%8F%98%E6%8D%A2%E7%9A%84%E7%BB%84%E5%90%88"><span class="post-toc-text">线性变换的组合</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E8%A1%8C%E5%88%97%E5%BC%8F%EF%BC%88Determinant-%EF%BC%89"><span class="post-toc-text">行列式（Determinant ）</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84"><span class="post-toc-text">线性方程组</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E9%80%86%E7%9F%A9%E9%98%B5"><span class="post-toc-text">逆矩阵</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E5%88%97%E7%A9%BA%E9%97%B4%EF%BC%88Column-Space%EF%BC%89"><span class="post-toc-text">列空间（Column Space）</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E7%9F%A9%E9%98%B5%E7%9A%84%E7%A7%A9%EF%BC%88Rank%EF%BC%89"><span class="post-toc-text">矩阵的秩（Rank）</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E9%9B%B6%E7%A9%BA%E9%97%B4%EF%BC%88Null-Space%EF%BC%89"><span class="post-toc-text">零空间（Null Space）</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E4%BE%8B%E5%AD%90"><span class="post-toc-text">例子</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E4%B8%8E%E7%A7%A9%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="post-toc-text">与秩的关系</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E8%B7%A8%E7%BB%B4%E5%BA%A6%E5%8F%98%E6%8D%A2"><span class="post-toc-text">跨维度变换</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E4%BA%8C%E7%BB%B4%E5%88%B0%E4%B8%89%E7%BB%B4"><span class="post-toc-text">二维到三维</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E4%B8%89%E7%BB%B4%E5%88%B0%E4%BA%8C%E7%BB%B4"><span class="post-toc-text">三维到二维</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E4%BA%8C%E7%BB%B4%E5%88%B0%E4%B8%80%E7%BB%B4"><span class="post-toc-text">二维到一维</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E7%82%B9%E7%A7%AF%EF%BC%88Dot-Product%EF%BC%89"><span class="post-toc-text">点积（Dot Product）</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E6%95%B0%E5%AD%A6%E8%A7%A3%E9%87%8A"><span class="post-toc-text">数学解释</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E5%9B%BE%E5%BD%A2%E8%A7%A3%E9%87%8A"><span class="post-toc-text">图形解释</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E5%8F%89%E4%B9%98-%E5%90%91%E9%87%8F%E7%A7%AF%EF%BC%88Cross-Product%EF%BC%89"><span class="post-toc-text">叉乘&#x2F;向量积（Cross Product）</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E4%BA%8C%E7%BB%B4%E7%A9%BA%E9%97%B4"><span class="post-toc-text">二维空间</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E4%B8%89%E7%BB%B4%E7%A9%BA%E9%97%B4"><span class="post-toc-text">三维空间</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E6%AD%A3%E4%BA%A4%E5%8F%98%E6%8D%A2"><span class="post-toc-text">正交变换</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E5%85%8B%E8%8E%B1%E5%A7%86%E6%B3%95%E5%88%99"><span class="post-toc-text">克莱姆法则</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E7%89%B9%E5%BE%81%E5%90%91%E9%87%8F"><span class="post-toc-text">特征向量</span></a></li></ol>
+            
+        
+        <link rel="stylesheet" type="text/css" href="https://jsd.cdn.zzko.cn/npm/hexo-theme-a4@latest/source/css/lightgallery.min.css" /><div class=".article-gallery"><h4 id="向量的三个视角"><a href="#向量的三个视角" class="headerlink" title="向量的三个视角"></a>向量的三个视角</h4><ol>
+<li>物理学：向量是物理空间中指向某个点的，包含方向和长度的箭头。</li>
+<li>计算机科学：向量是一个<strong>有序</strong>的数字列表。</li>
+<li>数学：数学家概括了这两种观点，向量可以是任何有合理概念的东西，其基本操作是<strong>向量加法</strong>和<strong>标量乘法</strong>。</li>
+</ol>
+<h4 id="向量操作"><a href="#向量操作" class="headerlink" title="向量操作"></a>向量操作</h4><ol>
+<li>向量加法：两个向量相加在坐标系中表示首尾相接。更形象的表示是，将两个向量看作是两个路径叠加的方式。比如(-1, 2) + (3, -4)就是先向左走-1，向上走2，再向右走3，向下走4。</li>
+<li>标量乘法：一个向量乘以一个标量，相当于是对这个向量进行缩放。</li>
+</ol>
+<h4 id="基向量"><a href="#基向量" class="headerlink" title="基向量"></a>基向量</h4><p>二维坐标系中，一般选取坐标系互相垂直的坐标轴作为基向量，但是也可以选取任意两个向量作为基向量，如下图：</p>
+<a target="_blank" rel="noopener" href="https://www.3blue1brown.com/content/lessons/2016/span/figures/different-basis-vectors/DifferentBasisVectors.svg" class="gallery-item" style="box-shadow: none;"> <img src="https://www.3blue1brown.com/content/lessons/2016/span/figures/different-basis-vectors/DifferentBasisVectors.svg" style="zoom:70%;" /></a>
+
+<p>$$\vec{v}$$和$$\vec{w}$$分别是以坐标系作为基向量的两个向量，也可以把它们看作基向量。不同基向量下的两个进行同样的缩放得到的两个向量是不相等的。</p>
+<h4 id="线性组合（Linear-combination）"><a href="#线性组合（Linear-combination）" class="headerlink" title="线性组合（Linear combination）"></a>线性组合（Linear combination）</h4><p>把两个基向量无限延申，可以看到一个斜交叉的坐标系。这两个基向量进行任意的缩放，可以得出整个平面，这就是<strong>线性组合</strong>。但是，当两个向量重合，那就无法组合出这条线之外的任何向量。</p>
+<h4 id="跨度（Span）"><a href="#跨度（Span）" class="headerlink" title="跨度（Span）"></a>跨度（Span）</h4><p>两个向量进行线性组合能得出的向量范围就是跨度。比如上面的$$\vec{v}$$和$$\vec{w}$$的跨度就是一个平面，而两个平行的向量的跨度就是一条线，两个零向量的跨度就是一个点。</p>
+<h4 id="三维空间上的跨度"><a href="#三维空间上的跨度" class="headerlink" title="三维空间上的跨度"></a>三维空间上的跨度</h4><p>当第三个基向量出现在前两个基向量的同一平面内，那么跨度不会增加。不在一个平面上时，跨度增加到三维空间。</p>
+<h4 id="线性相关的三种思考方式："><a href="#线性相关的三种思考方式：" class="headerlink" title="线性相关的三种思考方式："></a>线性相关的三种思考方式：</h4><ol>
+<li>当几个向量中有某个是冗余的，也就是它不会使得跨度增加，那么他就是线性相关的。</li>
+<li>其中一个向量可以表示为其他向量的线性组合，也就是说，它已经在另外两个的跨度内了。</li>
+<li>如果每个向量确实为跨度添加了另一个维度，则称为“线性无关”。</li>
+</ol>
+<h4 id="线性变换"><a href="#线性变换" class="headerlink" title="线性变换"></a>线性变换</h4><p>线性变换的本质是函数，即将一个向量输入，变换后输出另一个向量。</p>
+<h5 id="图像的理解过程"><a href="#图像的理解过程" class="headerlink" title="图像的理解过程"></a>图像的理解过程</h5><ol>
+<li>单个向量变换即进行旋转+缩放</li>
+<li>空间中每个向量都按照相同的方式旋转+缩放</li>
+<li>二维空间中，网格的变换辅助理解</li>
+</ol>
+<h5 id="变换保持线性的要求"><a href="#变换保持线性的要求" class="headerlink" title="变换保持线性的要求"></a>变换保持线性的要求</h5><ol>
+<li>线必须保持直线，不会弯曲</li>
+<li>原点必须固定不变</li>
+</ol>
+<p>可以想象为将线性变换视为保持网格线平行且间隔均匀，尽管它们可能会改变垂直网格线之间的角度：</p>
+<a target="_blank" rel="noopener" href="https://3b1b-posts.us-east-1.linodeobjects.com/content/lessons/2016/linear-transformations/figures/what-makes-a-transformation-linear/ExampleRotateAboutOrigin.png" class="gallery-item" style="box-shadow: none;"> <img src="https://3b1b-posts.us-east-1.linodeobjects.com/content/lessons/2016/linear-transformations/figures/what-makes-a-transformation-linear/ExampleRotateAboutOrigin.png" style="zoom:15%;" /></a>
+
+<h5 id="数学当中的理解"><a href="#数学当中的理解" class="headerlink" title="数学当中的理解"></a>数学当中的理解</h5><p>一个输入向量和两个基向量进行同等变换后，输入向量和输出向量相对于前后两对基向量的相对位置是同等的。</p>
+<a target="_blank" rel="noopener" href="https://www.3blue1brown.com/content/lessons/2016/linear-transformations/figures/matrices/LinearTransformationTechnique.svg" class="gallery-item" style="box-shadow: none;"> <img src="https://www.3blue1brown.com/content/lessons/2016/linear-transformations/figures/matrices/LinearTransformationTechnique.svg" style="zoom:80%;" /></a>
+
+<p>如上图$$\vec{i}$$和$$\vec{j}$$为基向量，$$\vec{v}$$为输入向量，线性变换后，$$\vec{i}$$和$$\vec{j}$$由原来的坐标轴变换为斜交叉的坐标轴，$$\vec{v}$$也跟着变换，就得到了输出向量$$L\left (\vec{v}  \right ) $$。放到矩阵当中，$$\vec{i}$$和$$\vec{j}$$就成为两个列向量。用数学理解就是：输入向量给定一个矩阵，通过该矩阵变换出一个输出向量。</p>
+<h5 id="三个例子"><a href="#三个例子" class="headerlink" title="三个例子"></a>三个例子</h5><ol>
+<li>旋转：基向量逆时针旋转90度，那么输入向量也逆时针旋转90度。</li>
+<li><a target="_blank" rel="noopener" href="https://www.3blue1brown.com/content/lessons/2016/linear-transformations/figures/examples/Shear.svg" class="gallery-item" style="box-shadow: none;"> <img src="https://www.3blue1brown.com/content/lessons/2016/linear-transformations/figures/examples/Shear.svg" style="zoom:70%;" /></a>折叠：看起来像剪叉式升降机，在数学上实际上是矩阵的第一行加上了第二行。</li>
+<li>线性相关列：相当于两个基向量被压缩成一条直线上，二维跨度收缩到一维跨度。</li>
+</ol>
+<h5 id="两个性质"><a href="#两个性质" class="headerlink" title="两个性质"></a>两个性质</h5><ol>
+<li>可加性：两个向量相加后进行变换后 &#x3D; 两个向量分别变换后相加</li>
+<li>缩放性：一个向量缩放后变换 &#x3D; 一个向量变换后缩放</li>
+</ol>
+<h5 id="线性变换的组合"><a href="#线性变换的组合" class="headerlink" title="线性变换的组合"></a>线性变换的组合</h5><p>将两次线性变换先后叠加，比如先进行逆时针90度旋转变换后再进行折叠。实际上，连续的两次变换的叠加，就是矩阵在数学上的乘法。</p>
+<p><strong>非交换性</strong>：矩阵的两次变换的顺序对结果是有影响的，因此不能对矩阵乘法交换运算。而单位矩阵的标量乘实际上是单位向量的缩放，所以不改变整个矩阵。</p>
+<p>第二次变换的矩阵是<strong>左乘</strong>第一次变换的矩阵的原因：矩阵乘法在相当于函数，而函数的形式是$$f(g(x))$$。</p>
+<h4 id="行列式（Determinant-）"><a href="#行列式（Determinant-）" class="headerlink" title="行列式（Determinant ）"></a>行列式（Determinant ）</h4><p>$$<br>det\left ( \begin{bmatrix} a &amp; b \ c &amp; d\end{bmatrix} \right ) &#x3D; ad-bc<br>$$</p>
+<p>行列式的值用可视化的形式表示，就是将坐标系的一个单位矩形面积（面积为1）放大的倍数。这里二维矩阵，第一列向量就是$$\vec{i}$$，第二列向量就是$$\vec{j}$$。行列式的值为正数，则$$\vec{i}$$在$$\vec{j}$$的右侧，如果行列式的值为负数，则$$\vec{i}$$在$$\vec{j}$$的左侧。</p>
+<h4 id="线性方程组"><a href="#线性方程组" class="headerlink" title="线性方程组"></a>线性方程组</h4><p>系数矩阵*变量向量 &#x3D; 常量向量</p>
+<h5 id="逆矩阵"><a href="#逆矩阵" class="headerlink" title="逆矩阵"></a>逆矩阵</h5><p>将矩阵变换后再变换回来，第二次变换就是第一次变换的逆。<br>$$<br>A^{-1} A&#x3D;\left[\begin{array}{ll}1 &amp; 0 \0 &amp; 1\end{array}\right]<br>$$</p>
+<p>矩阵A乘以它的逆矩阵，就相当于什么也没做，就是单位矩阵，单位矩阵变换就是什么也不做。<br>$$<br>A^ {-1}  A  \vec {x}  &#x3D;  A^ {-1} \vec{v} \<br>     \vec {x}  &#x3D;  A^ {-1} v<br>$$</p>
+<p>向量x经过矩阵A变换后得到向量v，反过来，向量v经过逆变换后得到向量x。</p>
+<p>行列式为0的变换是不可逆的，也即降维变换是不可逆的。如果空间被压缩成更低的维度，逆运算需要将一个向量映射成一条线上的无数个向量。</p>
+<h4 id="列空间（Column-Space）"><a href="#列空间（Column-Space）" class="headerlink" title="列空间（Column Space）"></a>列空间（Column Space）</h4><p>即列向量之间的跨度，其值与矩阵的秩相等。列空间就是一个向量在这个矩阵所表示的线性变换后所能输出的范围。</p>
+<h4 id="矩阵的秩（Rank）"><a href="#矩阵的秩（Rank）" class="headerlink" title="矩阵的秩（Rank）"></a>矩阵的秩（Rank）</h4><p>矩阵中的几个向量所能达到的最高维度（线性无关组的最大个数）。比如三阶矩阵的三个向量都是非线性相关的，那么矩阵的秩就是3，也是满秩的；如果有三个向量位于一个平面，则秩为2；如果三个向量位于一条线内，则秩为1。</p>
+<h4 id="零空间（Null-Space）"><a href="#零空间（Null-Space）" class="headerlink" title="零空间（Null Space）"></a>零空间（Null Space）</h4><p>一个输入向量能够经过一个矩阵的线性变换后得到一个零向量，所有这些输入向量的集合就是零空间。</p>
+<h5 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h5><p>二维空间中，如果有一个二维变换将所有向量压缩成一条线，那么就表明原先有一条直线，这条直线上的所有向量都被压缩成一个点，也就是零向量。这条直线就是零空间，因为这个空间内的所有向量都会被压缩成零向量。而不在这条线上的所有向量都被压缩到这条线上的一个向量。</p>
+<h5 id="与秩的关系"><a href="#与秩的关系" class="headerlink" title="与秩的关系"></a>与秩的关系</h5><p>Null Space 的维度被称为矩阵的<strong>零空间维数</strong>或<strong>空秩</strong>（nullity）。这反映了有多少个线性无关的向量可以被矩阵映射到零向量。</p>
+<p>满秩的矩阵，它的空秩为0，在这个空间内，只有零向量会被压缩为零向量，因为它保持不变。也就是说，只有一个矩阵不是满秩的，是处于比它的最大维度小的，才会有零空间。公式：秩 + 空秩 &#x3D; 列数。通过这个公式可知，三维矩阵的秩为2时，空秩为1，它有一个维度的空间可以被压缩成零向量，也就是有一条线的空间可以被压缩成零向量。而当三维矩阵的秩为1时，空秩为2，他有两个维度的空间可以被压缩成零向量，也就是有一个平面的空间上的向量会被压缩成零向量。</p>
+<h5 id="跨维度变换"><a href="#跨维度变换" class="headerlink" title="跨维度变换"></a>跨维度变换</h5><h5 id="二维到三维"><a href="#二维到三维" class="headerlink" title="二维到三维"></a>二维到三维</h5><p>一个二维空间的矩阵是两行两列的，有两个基向量，每个点有两个坐标 -&gt; 变换到三维，它的坐标变成三个，因此有三行，而它的基向量仍旧是原来的2个，因此是两列，也就是一个三行两列的矩阵。</p>
+<h5 id="三维到二维"><a href="#三维到二维" class="headerlink" title="三维到二维"></a>三维到二维</h5><p>一个三维空间的矩阵是三行三列的，有三个基向量，每个点有三个坐标 -&gt; 变换到二维，它的坐标变成两个，因此有两行，而基向量还是原来的3个，因此是三列，也就是一个两行三列的矩阵。</p>
+<h5 id="二维到一维"><a href="#二维到一维" class="headerlink" title="二维到一维"></a>二维到一维</h5><p>二维空间上一条直线上等间距的点被映射到一维空间的点也是等距的。</p>
+<h4 id="点积（Dot-Product）"><a href="#点积（Dot-Product）" class="headerlink" title="点积（Dot Product）"></a>点积（Dot Product）</h4><h5 id="数学解释"><a href="#数学解释" class="headerlink" title="数学解释"></a>数学解释</h5><p>两个向量，把它们每个对应的坐标相乘再加起来。</p>
+<h5 id="图形解释"><a href="#图形解释" class="headerlink" title="图形解释"></a>图形解释</h5><p>一个向量再另一个向量上的投影长度乘以另一个向量的长度。</p>
+<p>在将向量转化为数字的线性变换和向量本身之间有某种联系。行向量变为列向量，相当于把二维平面压缩成一维直线，每个向量就成了这条线上的一个数字。</p>
+<h4 id="叉乘-向量积（Cross-Product）"><a href="#叉乘-向量积（Cross-Product）" class="headerlink" title="叉乘&#x2F;向量积（Cross Product）"></a>叉乘&#x2F;向量积（Cross Product）</h4><h5 id="二维空间"><a href="#二维空间" class="headerlink" title="二维空间"></a>二维空间</h5><p>向量积的值就是前文的[行列式](#行列式（Determinant ）)，第一个向量乘以第二个向量时，必须第一个向量在左下，第二个向量在右上，向量积才为正值，在图像上表示两个单位向量变换后翻转。</p>
+<h5 id="三维空间"><a href="#三维空间" class="headerlink" title="三维空间"></a>三维空间</h5><p>三维空间中，叉乘的结果是垂直于两个向量所在平面的一个向量，其长度等于两个向量所形成的面积。</p>
+<p>本质上，叉乘是表示两个向量长度相乘和方向相对性的表示，所以是一个向量。而在二维空间中，由于没有第三维度，所以无法表示两个向量的相对性，叉乘的结果只能表示成标量。</p>
+<h4 id="正交变换"><a href="#正交变换" class="headerlink" title="正交变换"></a>正交变换</h4><p>进行正交变换后的向量，不会被缩放，只会被旋转，任意两个向量之间的内积保持不变。</p>
+<h5 id="克莱姆法则"><a href="#克莱姆法则" class="headerlink" title="克莱姆法则"></a>克莱姆法则</h5><p>计算一个未知向量的坐标，即求解方程组的方法。</p>
+<h4 id="特征向量"><a href="#特征向量" class="headerlink" title="特征向量"></a>特征向量</h4><p>线性变换后，只进行了缩放的向量称为特征向量，而其他向量都会被加以旋转。特征向量被缩放的倍数就是特征值。</p>
+</div><script src="https://jsd.cdn.zzko.cn/npm/hexo-theme-a4@latest/source/js/lightgallery.min.js"></script><script>if("undefined"!=typeof lightGallery) {
+        var options1 = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options1);
+        }</script>
+    </div>
+
+    <div class="post-meta">
+        <i>
+        
+            <span>2024-09-29</span>
+            
+                <span>该篇文章被 笙歌</span>
+            
+            
+             
+                <span>归为分类:
+                    
+                    
+                        <a href='/categories/%E7%90%86%E9%89%B4/'>
+                            理鉴
+                        </a>
+                    
+                </span>
+            
+        
+        </i>
+    </div>
+    <br>
+    
+    <!-- <div class="post-footer-pre-next">
+        <span>上一篇：<a href=""></a></span>
+        <span class="post-footer-pre-next-last-span-right">上一篇：<a href=""></a></span>
+    </div> -->
+
+    
+        
+
+     
+</div>
+
+
+
+                                      
+                    
+                    
+                    <div class="footer">
+    
+        <span> 
+            © 1949-2023 China 
+
+            
+                
+
+            
+                
+                    / <a href="/friends/"> 友链 </a>
+                
+
+            
+        </span>
+    
+</div>
+<!--这是指一条线往下的内容-->
+<div class="footer-last">
+    
+            <span>不念过往，不惧将来🌈</span>
+            
+    
+</div>
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!--目录-->
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js" type="text/javascript" ></script>
+        
+<script src="/js/toc.js"></script>
+
+    
+
+    
+<script src="/js/randomHeaderContent.js"></script>
+
+    <!--回到顶部按钮-->
+    
+        
+<script src="/js/returnToTop.js"></script>
+
+    
+
+    
+        
+<script src="/js/returnToLastPage.js"></script>
+
+    
+
+
+
+
+
+<script src="/js/lightgallery.min.js"></script>
+
+
+
+                </div>
+            
+            
+                <!-- 回到顶部的按钮-->  
+                <div class="progress-wrap shadow-drop-2-bottom">
+                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+                    </svg>
+                </div>
+            
+            
+                <!-- 返回的按钮-->  
+                <div class="return-to-last-progress-wrap shadow-drop-2-bottom">
+                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+                    </svg>
+                </div>
+            
+    </body>
+</html>
