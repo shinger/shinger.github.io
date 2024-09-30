@@ -26,6 +26,6 @@
     font-style: normal;
     font-weight: bold;
     src: local("../fonts/LXGWWenKaiLite-Bold.woff2"),
-        url("https://jsd.cdn.zzko.cn/gh/hininojay/images/source/img/a4color/LXGWWenKaiLite-Bold.woff2") format("woff2"),
-        url("../fonts/LXGWWenKaiLite-Bold.woff2") format("woff2");
+        url("../fonts/LXGWWenKaiLite-Bold.woff2") format("woff2"),
+        url("https://jsd.cdn.zzko.cn/gh/hininojay/images/source/img/a4color/LXGWWenKaiLite-Bold.woff2") format("woff2");
 }
