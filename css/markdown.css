@@ -115,6 +115,8 @@
     border-left: 2px solid var(--line-2);
     padding-left: 12px;
     word-wrap: break-word;
+    color: #4a4a4a;
+    font-style: italic;
 }
 
 .post-md .video-container
