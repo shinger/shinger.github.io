@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>存储的持续性和链接性 · 未语清</title>
+<meta name="description" content="打捞时代褶皱，收藏日常微光。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<style>
+  :root{ --accent: #AD3B26; }
+  html.dark{ --accent: #D2654C; }
+</style>
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<header class="top-bar">
+  <a href="/" class="back-link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+    <svg class="seal-stamp seal-mini" viewBox="0 0 44 44" aria-hidden="true">
+  <path d="M5 8 Q3 3 9 3 L35 4 Q41 5 40 11 L39 36 Q38 41 32 40 L7 39 Q2 38 3 33 Z"/>
+  <text x="22" y="28" text-anchor="middle">拾</text>
+</svg>
+
+    未语清
+  </a>
+  <button class="theme-toggle" id="themeToggle" aria-label="切换深色模式" type="button">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.4 4.4l1.7 1.7M17.9 17.9l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.4 19.6l1.7-1.7M17.9 6.1l1.7-1.7"/></svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5z"/></svg>
+</button>
+
+</header>
+
+<main>
+  <article>
+    <header class="article-header">
+      
+      <span class="kicker">程序</span>
+      
+      <h1 class="article-title">存储的持续性和链接性</h1>
+      <p class="article-meta">
+        笙歌<span class="sep">/</span>二零二三年 一月 三十一日<span class="sep">/</span>约 735 字<span class="sep">/</span>阅读约 2 分钟
+      </p>
+    </header>
+
+    
+    <div class="article-body">
+      <h1 id="持续性"><a href="#持续性" class="headerlink" title="持续性"></a>持续性</h1><h3 id="动态存储持续性"><a href="#动态存储持续性" class="headerlink" title="动态存储持续性"></a>动态存储持续性</h3><p>在函数和代码块中定义的变量，随着函数的开始进行存储，结束自动释放<br>只在函数和代码块内部具有生命期</p>
+<h3 id="静态存储持续性"><a href="#静态存储持续性" class="headerlink" title="静态存储持续性"></a>静态存储持续性</h3><p>在函数外或static关键字声明的变量在程序整个运行周期都存在</p>
+<h1 id="链接性"><a href="#链接性" class="headerlink" title="链接性"></a>链接性</h1><h3 id="外部链接性"><a href="#外部链接性" class="headerlink" title="外部链接性"></a>外部链接性</h3><p>在函数外部定义的变量和普通函数都具有外部链接性，除了在本文件中可使用，在其他文件中也可以使用</p>
+<h3 id="内部链接性"><a href="#内部链接性" class="headerlink" title="内部链接性"></a>内部链接性</h3><p>函数外的static静态变量和static静态函数都具有内部链接性，在整个文件中都可以使用这些变量和函数，但在其他文件中不能使用，也即不具有外部链接性</p>
+<h3 id="无链接性"><a href="#无链接性" class="headerlink" title="无链接性"></a>无链接性</h3><p>在函数或代码块内部的变量都没有链接性，之内在函数或代码块内部使用</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> n;<span class="comment">//静态持续性，外部链接性</span></span><br><span class="line"></span><br><span class="line"><span class="type">static</span> <span class="type">int</span> m;<span class="comment">//静态持续性，内部链接性</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">func</span><span class="params">()</span><span class="comment">//外部链接性</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="type">int</span> a;<span class="comment">//动态持续性，内部链接性</span></span><br><span class="line">	</span><br><span class="line">	<span class="type">static</span> <span class="type">int</span> b;<span class="comment">//静态持续性，内部链接性</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">static</span> <span class="type">void</span> <span class="title">func_2</span><span class="params">()</span><span class="comment">//内部链接性</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	...</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="定义与声明"><a href="#定义与声明" class="headerlink" title="定义与声明"></a>定义与声明</h1><p>具有外部链接性的变量和函数，可以其他文件中声明，但不能定义（[单定义规则](C++杂记 # 单定义规则)），对于变量的声明使用[[extern关键字]]</p>
+<p>具有内部链接性的变量和函数，可以在其他文件中再次声明和定义，且两个变量和函数属于不同值，只在所在的文件中可访问</p>
+<h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><h3 id="static静态变量和全局变量的区别"><a href="#static静态变量和全局变量的区别" class="headerlink" title="static静态变量和全局变量的区别"></a>static静态变量和全局变量的区别</h3><p>静态和非静态的全局变量都能在整个文件中使用，但在其他文件中，非静态全局变量可以被使用，而静态全局变量不能使用</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#incluce <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> n=<span class="number">10</span>;<span class="comment">//其他文件可使用，extern声明</span></span><br><span class="line"><span class="type">static</span> <span class="type">int</span> m=<span class="number">20</span>;<span class="comment">//其他文件中不能使用</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="static静态函数和普通函数的区别"><a href="#static静态函数和普通函数的区别" class="headerlink" title="static静态函数和普通函数的区别"></a>static静态函数和普通函数的区别</h3><blockquote>
+<ul>
+<li>普通函数默认为全局函数，具有外部链接性，可在文件中共享，不能在两个文件中定义同一个函数,可以再次声明来使用同一函数</li>
+<li>static静态函数只在本文件中可用，具有内部链接性，可以在其他文件中定义同一函数</li>
+</ul>
+</blockquote>
+<p>main.cpp</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span>  </span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;  </span><br><span class="line"><span class="function"><span class="type">static</span> <span class="type">int</span>  <span class="title">average</span><span class="params">(<span class="type">int</span> a,<span class="type">int</span> b)</span>  <span class="comment">//声明静态变量</span></span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">return</span> (a+b)/<span class="number">2</span>;  </span><br><span class="line">&#125;  </span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">call</span><span class="params">()</span></span>;  </span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    cout&lt;&lt;<span class="built_in">average</span>(<span class="number">3</span>,<span class="number">6</span>)&lt;&lt;endl;  </span><br><span class="line">    <span class="built_in">call</span>();  </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>other.cpp</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span>  </span></span><br><span class="line">  </span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;  </span><br><span class="line"><span class="function"><span class="type">double</span>  <span class="title">average</span><span class="params">(<span class="type">int</span> a,<span class="type">int</span> b)</span>  <span class="comment">//与main中average同名（非重载），但可以再次定义</span></span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">return</span> (a+b)/<span class="number">2.0</span>;  </span><br><span class="line">&#125;  </span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">call</span><span class="params">()</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    cout&lt;&lt;<span class="built_in">average</span>(<span class="number">3</span>,<span class="number">6</span>)&lt;&lt;endl;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+    </div>
+
+    <p class="article-end">◆</p>
+
+    <nav class="post-nav" aria-label="上一篇与下一篇">
+      
+      <a class="prev" href="/cmqni7t1p003g4gw6h5rp97em/">
+        <span class="label">← 上一篇</span>
+        <span class="title">看云</span>
+      </a>
+      
+      
+    </nav>
+  </article>
+</main>
+
+<script src="/js/main.js"></script>
+</body>
+</html>

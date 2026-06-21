@@ -1,321 +1,623 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-    
-    <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
-    <meta name="description" content="" />
-    <meta name="hexo-theme-A4" content="v1.7.0" />
-    <link rel="alternate icon" type="image/webp" href="/img/favicon.webp">
-    <title>未语清 | Serene Whisper</title>
-
-    
-        
-<link rel="stylesheet" href="/css/highlight/style1.css">
-
-        
-<link rel="stylesheet" href="/css/reset.css">
-
-        
-<link rel="stylesheet" href="/css/markdown.css">
-
-        
-<link rel="stylesheet" href="/css/fonts.css">
- 
-         <!--注意：首页既不是post也不是page-->
-        
-        
-        
-<link rel="stylesheet" href="/css/ui.css">
- 
-        
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>未语清 · Serene Whisper</title>
+<meta name="description" content="打捞时代褶皱，收藏日常微光。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css">
-
-
-        
-            <!--返回顶部css-->
-            
-<link rel="stylesheet" href="/css/returnToTop.css">
-
-            
-<link rel="stylesheet" href="/css/unicons.css">
-
-        
-        
-            <!--目录-->
-            
-<link rel="stylesheet" href="/css/toc.css">
-
-        
-    
-
-    
-        
-<link rel="stylesheet" href="/css/returnToLastPage.css">
-
-    
-    
-   
-<link rel="stylesheet" href="/css/lightgallery-bundle.min.css">
-
+<style>
+  :root{ --accent: #AD3B26; }
+  html.dark{ --accent: #D2654C; }
+</style>
 
 <meta name="generator" content="Hexo 7.3.0"></head>
-    
-    
+<body>
+<div class="grain" aria-hidden="true"></div>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="/" class="site-name">未语清</a>
+    <nav class="site-nav" aria-label="主导航">
+      <a href="/">文章</a>
+      <span class="sep">/</span>
+      <a href="/timeline/">时光</a>
+      <span class="sep">/</span>
+      <a href="/archives/">归档</a>
+      <span class="sep">/</span>
+      <a href="/about/">关于</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="切换深色模式" type="button">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.4 4.4l1.7 1.7M17.9 17.9l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.4 19.6l1.7-1.7M17.9 6.1l1.7-1.7"/></svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5z"/></svg>
+</button>
 
-    
-    
+    </nav>
+  </div>
+</header>
 
-
-
-    
-
-    
-    
-
-    
-    
-    
-    <body>
-        <script src="/js/darkmode-js.min.js"></script>
-        
-        <script>
-            const options = {
-                bottom: '40px', // default: '32px'
-                right: 'unset', // default: '32px'
-                left: '42px', // default: 'unset'
-                time: '0.3s', // default: '0.3s'
-                mixColor: '#fff', // default: '#fff'
-                backgroundColor: ' #e4e4e4 ',  // default: '#fff'
-                buttonColorDark: '#100f2c',  // default: '#100f2c'
-                buttonColorLight: '#fff', // default: '#fff'
-                saveInCookies: true, // default: true,
-                label: '🌓', // default: ''
-                autoMatchOsTheme: true // default: true
-            }
-            const darkmode = new Darkmode(options);
-            darkmode.showWidget();
-        </script>
-        
-        
-            <div class="left-toc-container">
-                <nav id="toc" class="bs-docs-sidebar"></nav>
-            </div>
-        
-        <div class="paper">
-            
-            
-            
-            
-                <div class="shadow-drop-2-bottom paper-main">
-                    
-
-
-<div class="header">
-    <div class="header-container">
-        <img style="
-        width: 56px;
-        height: auto;" alt="^-^" cache-control="max-age=86400" class="header-img" src="/img/favicon.webp" width="10%"></img>
-        <div class="header-content">
-            <a class="logo" href="/">未语清</a> 
-            <span class="description"></span> 
-        </div>
-        
-    </div>
-    
-   
-    <ul class="nav">
-        
-            
-                <li><a href="/">首页</a></li>
-            
-        
-            
-                <li><a href="/list/">文章</a></li>
-            
-        
-            
-                <li><i>
-                    
-                        <a style="color: #4e7dde;" href="/categories/">分类</a>
-                    
-                </i></li>
-            
-        
-            
-                <li><a href="/works/">作品</a></li>
-            
-        
-            
-                <li><a href="/times/">时光</a></li>
-            
-        
-            
-                <li><a href="/reading/">读书笔记</a></li>
-            
-        
-    </ul>
-</div> 
-        
-                    
-                    
-
-                    
-                    
-                        
-
-<div class="archive-list">
-  <ul class="archive">
-
-    
-    <span><span class="darkmode-ignore">🔖</span><i>随笔/page/2</i></span>
-          
-    
-
-    
-    
-
-    
-    
-
-  
-  </ul>
-</div>
- 
-                    
-                    
-                    <!--说明是文章post页面-->
-                    
-                    
-                    <div class="footer">
-    
-        <span> 
-            © 1949-2023 China 
-
-            
-                
-
-            
-                
-                    / <a href="/friends/"> 友链 </a>
-                
-
-            
-        </span>
-       
-    
+<main>
+  <section class="wrap archive-section" aria-label="归档">
+    <h1 class="archive-title">归档</h1>
+    <div class="archive-tabs">
+  <a href="/archives/" class=&#34;active&#34;>按年份</a>
+  <span class="sep">/</span>
+  <a href="/categories/">按分类</a>
 </div>
 
-
-
-<!--这是指一条线往下的内容-->
-<div class="footer-last">
     
-            <span>不念过往，不惧将来🌈</span>
-            
     
-</div>
-
-
+      
+      
+        <h2 class="archive-group">二零二六年</h2>
+      
+      <article class="archive-item">
+        <time>六月 二十日</time>
+        <a href="/cmqni7t1l002m4gw6gapigjj0/">当悲伤遗忘悲伤</a>
+      </article>
     
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-
-    <!--目录-->
+      
+      
+      <article class="archive-item">
+        <time>四月 三日</time>
+        <a href="/cmqni7t17000a4gw6h3mseoc6/">《倦怠社会》读书笔记</a>
+      </article>
     
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" ></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript" ></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js" type="text/javascript" ></script>
-        
-<script src="/js/toc.js"></script>
-
+      
+      
+      <article class="archive-item">
+        <time>三月 二十七日</time>
+        <a href="/cmqni7t1500064gw60nb50f91/">On dreams - Arrival or not</a>
+      </article>
     
-
+      
+      
+      <article class="archive-item">
+        <time>三月 十日</time>
+        <a href="/cmqni7t1g001p4gw69v9fe837/">告别</a>
+      </article>
     
-<script src="/js/randomHeaderContent.js"></script>
-
-    <!--回到顶部按钮-->
+      
+      
+      <article class="archive-item">
+        <time>一月 五日</time>
+        <a href="/cmqni7t1i00224gw60o09a11v/">只有天知道</a>
+      </article>
     
-        
-<script src="/js/returnToTop.js"></script>
-
+      
+      
+        <h2 class="archive-group">二零二五年</h2>
+      
+      <article class="archive-item">
+        <time>十二月 十六日</time>
+        <a href="/cmqni7t1e00184gw65j6c7r1b/">从实践开始</a>
+      </article>
     
-
+      
+      
+      <article class="archive-item">
+        <time>五月 二十九日</time>
+        <a href="/cmqni7t1s00454gw647kuccsc/">记梦：火灾</a>
+      </article>
     
-        
-<script src="/js/returnToLastPage.js"></script>
-
+      
+      
+      <article class="archive-item">
+        <time>五月 三日</time>
+        <a href="/cmqni7t1t004b4gw6911fbi9l/">记梦：退学</a>
+      </article>
     
-
-
-
-
-
-<script src="/js/lightgallery/lightgallery.umd.min.js"></script>
-
-
-
-<script src="/js/lightgallery/plugins/lg-thumbnail.umd.min.js"></script>
-
-
-
-<script src="/js/lightgallery/plugins/lg-fullscreen.umd.min.js"></script>
-
-
-<script src="/js/lightgallery/plugins/lg-autoplay.umd.min.js"></script>
-
-
-<script src="/js/lightgallery/plugins/lg-zoom.umd.min.js"></script>
-
-
-<script src="/js/lightgallery/plugins/lg-rotate.umd.min.js"></script>
-
-
-<script src="/js/lightgallery/plugins/lg-paper.umd.min.js"></script>
-
-
-
-
-<script type="text/javascript">
-     
-    if (typeof lightGallery !== "undefined") {
-        var options1 = {
-            selector: '.gallery-item',
-            plugins: [lgThumbnail, lgFullscreen, lgAutoplay, lgZoom, lgRotate, lgPager], // 启用插件
-            thumbnail: true,          // 显示缩略图
-            zoom: true,               // 启用缩放功
-            rotate: true,             // 启用旋转功能能
-            autoplay: true,        // 启用自动播放功能
-            fullScreen: true,      // 启用全屏功能
-            pager: false, //页码,
-            zoomFromOrigin: true,   // 从原始位置缩放
-            actualSize: true,       // 启用查看实际大小的功能
-            enableZoomAfter: 300,    // 延迟缩放，确保图片加载完成后可缩放
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options1); // 修复选择器
-    }
+      
+      
+      <article class="archive-item">
+        <time>五月 一日</time>
+        <a href="/cmqni7t1r003v4gw6138n3swa/">自我的幻觉</a>
+      </article>
     
-</script>
+      
+      
+      <article class="archive-item">
+        <time>四月 十日</time>
+        <a href="/cmqni7t1h001u4gw68p5l3sx4/">《知觉现象学》读书笔记</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>三月 二十七日</time>
+        <a href="/cmqni7t1000014gw61ww53ww9/">When I Die - Rumi</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>三月 二日</time>
+        <a href="/cmqni7t1d00104gw6azrx8vvk/">《胡塞尔现象学》读书笔记</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>二月 十二日</time>
+        <a href="/cmqni7t1s00434gw6cez9bl2c/">王德峰《哲学导论》读书笔记</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>一月 二十九日</time>
+        <a href="/cmqni7t1o003a4gw69nq72cff/">新瓶旧酒</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>一月 十八日</time>
+        <a href="/cmqni7t1n002y4gw60hi2dx80/">情境与游离：论人的断裂</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>一月 十七日</time>
+        <a href="/cmqni7t1c000u4gw6bui8fmo1/">《癔症研究》读书笔记</a>
+      </article>
+    
+      
+      
+        <h2 class="archive-group">二零二四年</h2>
+      
+      <article class="archive-item">
+        <time>十二月 二十八日</time>
+        <a href="/cmqni7t1600084gw6120hhgpe/">《人人都该懂的认识论》读书笔记</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>十二月 二十三日</time>
+        <a href="/cmqni7t1c000w4gw63g64hlm4/">《敞开：人与动物》读书笔记</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>十一月 二十五日</time>
+        <a href="/cmqni7t1d00144gw61vnoe2jt/">《自我与无意识》读书笔记</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>十一月 二十三日</time>
+        <a href="/cmqni7t1o00364gw6gnzaex6k/">死亡谈话——文化艺术存在论</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>十一月 二十二日</time>
+        <a href="/cmqni7t1300034gw6d516dlay/">《共产党宣言》读书笔记</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>十一月 十八日</time>
+        <a href="/cmqni7t1d00124gw62tilgu2b/">《普通语言学教程》读书笔记</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>十一月 九日</time>
+        <a href="/cmqni7t1m002u4gw63pf86gdj/">如其所如</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>十一月 二日</time>
+        <a href="/cmqni7t17000d4gw60j1a2nmb/">《后现代道德》读书笔记</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>十一月 二日</time>
+        <a href="/cmqni7t1u004n4gw638wk0stj/">高岭之花</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>十月 十八日</time>
+        <a href="/cmqni7t1a000p4gw6b8fr6i0b/">《民主主义与教育》读书笔记</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>十月 十二日</time>
+        <a href="/cmqni7t1o00384gw62euf2te6/">核美学的心理意象</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>十月 十日</time>
+        <a href="/cmqni7t1k002e4gw67spnax0p/">当代互联网的“焦虑”营销</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>十月 三日</time>
+        <a href="/cmqni7t1g001n4gw6h5b8572v/">十月三日随笔</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>九月 二十九日</time>
+        <a href="/cmqni7t1g001k4gw65a9b4q7i/">关于自我探索</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>九月 二十九日</time>
+        <a href="/cmqni7t1q003m4gw60fd51toc/">游虫</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>九月 二十七日</time>
+        <a href="/cmqni7t1s00474gw6acj37sdo/">装下一个世界</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>九月 二十二日</time>
+        <a href="/cmqni7t1l002i4gw677xkc6rr/">学习中的思维转换</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>九月 二十一日</time>
+        <a href="/cmqni7t1k002g4gw61rjmg39t/">学科中的用词和翻译</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>九月 十八日</time>
+        <a href="/cmqni7t1e00164gw66ryz2dro/">中秋夜</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>九月 十四日</time>
+        <a href="/cmqni7t1p003i4gw68rdjf5ah/">独居的意义</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>九月 十一日</time>
+        <a href="/cmqni7t1n00324gw69z6ydz7j/">文思楼思文</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>九月 九日</time>
+        <a href="/cmqni7t1k002b4gw6dshceqdc/">《矛盾论》读书笔记</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>九月 八日</time>
+        <a href="/cmqni7t1b000r4gw6edu81xzp/">《人类简史》读书笔记</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>九月 四日</time>
+        <a href="/cmqni7t1s00494gw674kw8tv3/">记梦：暴力组织</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>九月 三日</time>
+        <a href="/cmqni7t1c000y4gw68dcg6log/">《筚路维艰》读书笔记</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>九月 二日</time>
+        <a href="/cmqni7t1t004f4gw666nmenyd/">记梦：回不去的童年</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>八月 三十日</time>
+        <a href="/cmqni7t19000l4gw6272yekut/">《实践论》读书笔记</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>八月 二十八日</time>
+        <a href="/cmqni7t18000f4gw68shwfet5/">《智变时代》读书笔记</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>八月 二十七日</time>
+        <a href="/cmqni7t1p003e4gw6h435856d/">用一粒沙观看</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>八月 二十七日</time>
+        <a href="/cmqni7t1q003t4gw6g6xabcso/">等一场雨</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>八月 二十五日</time>
+        <a href="/cmqni7t1n00344gw69mbsbvfp/">房间</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>八月 二十二日</time>
+        <a href="/cmqni7t1j00294gw63ukq2gfz/">夜晚，窗台</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>八月 二十一日</time>
+        <a href="/cmqni7t1m002w4gw6f38u9onw/">感性与理性</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>八月 二十日</time>
+        <a href="/cmqni7t1q003p4gw6evkvb0dg/">窗外</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>八月 十六日</time>
+        <a href="/cmqni7t1i001z4gw61t7z963w/">博花闻物</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>八月 十五日</time>
+        <a href="/cmqni7t1u004r4gw61l6s6nal/">镜子</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>八月 十四日</time>
+        <a href="/cmqni7t1e001b4gw648v0aaa2/">不必为人所知</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>八月 十二日</time>
+        <a href="/cmqni7t1t004d4gw649oo135g/">记童年一二</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>八月 十一日</time>
+        <a href="/cmqni7t1p003k4gw66d2q4h9z/">白色手记</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>八月 九日</time>
+        <a href="/cmqni7t1t004h4gw6c8t33hup/">逃避自由</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>八月 七日</time>
+        <a href="/cmqni7t1f001d4gw69u6db1u1/">《虚无主义》读书笔记</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>八月 六日</time>
+        <a href="/cmqni7t1h001s4gw61g4newf2/">后上章</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>八月 三日</time>
+        <a href="/cmqni7t1l002k4gw6cl9p86ro/">强迫症</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>八月 一日</time>
+        <a href="/cmqni7t1u004j4gw6hdvc4496/">读《你当像鸟飞往你的山》有感2</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>八月 一日</time>
+        <a href="/cmqni7t1n00304gw6cutcb2n0/">无人知晓的春天</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>七月 三十一日</time>
+        <a href="/cmqni7t1q003r4gw6blkk031l/">纵火的风</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>七月 二十八日</time>
+        <a href="/cmqni7t1v004t4gw6agm59hf8/">遗荒</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>七月 二十六日</time>
+        <a href="/cmqni7t1r003z4gw6dbwcb0iy/">空白的梦</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>七月 二十五日</time>
+        <a href="/cmqni7t1u004l4gw6anys3pgw/">读《你当像鸟飞往你的山》有感1</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>七月 二十五日</time>
+        <a href="/cmqni7t1j00244gw68ekb7snm/">命运研究室</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>七月 二十四日</time>
+        <a href="/cmqni7t19000j4gw69gorgzg3/">《孤独传》读后感</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>七月 二十三日</time>
+        <a href="/cmqni7t1r003x4gw66e1x51ut/">苦海</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>七月 十九日</time>
+        <a href="/cmqni7t1f001f4gw6cj1d18x6/">两块坟墓</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>七月 十八日</time>
+        <a href="/cmqni7t1l002o4gw69j5n3duf/">幸福的思考</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>七月 十六日</time>
+        <a href="/cmqni7t1u004p4gw6h3702ss3/">读《孤独传》——浅谈孤独与爱情中的“缺失”</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>七月 八日</time>
+        <a href="/cmqni7t1r00414gw6b7ld9gda/">被困于黑夜</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>七月 八日</time>
+        <a href="/cmqni7t1o003c4gw68cg18wmp/">灵魂的高塔</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>七月 二日</time>
+        <a href="/cmqni7t1m002s4gw6bsm2f3uc/">孤独深处</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>一月 二十一日</time>
+        <a href="/cmqni7t1i001x4gw64rxgftxj/">在他人的眼中，照见真实的自己</a>
+      </article>
+    
+      
+      
+        <h2 class="archive-group">二零二三年</h2>
+      
+      <article class="archive-item">
+        <time>八月 三十日</time>
+        <a href="/cmqni7t1f001i4gw6ev635gku/">人生段落</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>八月 二十六日</time>
+        <a href="/cmqni7t1l002q4gw6fg4veppb/">情有所寄，心有所依</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>八月 十四日</time>
+        <a href="/cmqni7t1p003g4gw6h5rp97em/">看云</a>
+      </article>
+    
+      
+      
+      <article class="archive-item">
+        <time>一月 三十一日</time>
+        <a href="/cmqni7t1j00264gw6cx911djf/">存储的持续性和链接性</a>
+      </article>
+    
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 未语清 · 保留所有权利</p>
+  </div>
+</footer>
 
 
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> 
-
-                </div>
-            
-            
-                <!-- 回到顶部的按钮-->  
-                <div class="progress-wrap shadow-drop-2-bottom">
-                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
-                    </svg>
-                </div>
-            
-            
-                <!-- 返回的按钮-->  
-                <div class="return-to-last-progress-wrap shadow-drop-2-bottom">
-                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
-                    </svg>
-                </div>
-            
-    </body>
+<script src="/js/main.js"></script>
+</body>
 </html>

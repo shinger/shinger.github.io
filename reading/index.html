@@ -1,360 +1,73 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-    
-    <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
-    <meta name="description" content="reading" />
-    <meta name="hexo-theme-A4" content="v1.7.0" />
-    <link rel="alternate icon" type="image/webp" href="/img/favicon.webp">
-    <title>未语清 | Serene Whisper</title>
-
-    
-        
-<link rel="stylesheet" href="/css/highlight/style1.css">
-
-        
-<link rel="stylesheet" href="/css/reset.css">
-
-        
-<link rel="stylesheet" href="/css/markdown.css">
-
-        
-<link rel="stylesheet" href="/css/fonts.css">
- 
-         <!--注意：首页既不是post也不是page-->
-        
-        
-        
-<link rel="stylesheet" href="/css/ui.css">
- 
-        
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>reading · 未语清</title>
+<meta name="description" content="打捞时代褶皱，收藏日常微光。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css">
-
-
-        
-            <!--返回顶部css-->
-            
-<link rel="stylesheet" href="/css/returnToTop.css">
-
-            
-<link rel="stylesheet" href="/css/unicons.css">
-
-        
-        
-            <!--目录-->
-            
-<link rel="stylesheet" href="/css/toc.css">
-
-        
-    
-
-    
-        
-<link rel="stylesheet" href="/css/returnToLastPage.css">
-
-    
-    
-   
-<link rel="stylesheet" href="/css/lightgallery-bundle.min.css">
-
+<style>
+  :root{ --accent: #AD3B26; }
+  html.dark{ --accent: #D2654C; }
+</style>
 
 <meta name="generator" content="Hexo 7.3.0"></head>
-    
-    
+<body>
+<div class="grain" aria-hidden="true"></div>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="/" class="site-name">未语清</a>
+    <nav class="site-nav" aria-label="主导航">
+      <a href="/">文章</a>
+      <span class="sep">/</span>
+      <a href="/timeline/">时光</a>
+      <span class="sep">/</span>
+      <a href="/archives/">归档</a>
+      <span class="sep">/</span>
+      <a href="/about/">关于</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="切换深色模式" type="button">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.4 4.4l1.7 1.7M17.9 17.9l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.4 19.6l1.7-1.7M17.9 6.1l1.7-1.7"/></svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5z"/></svg>
+</button>
 
-    
-    
+    </nav>
+  </div>
+</header>
 
-
-
-    
-
-    
-    
-
-    
-    
-    
-    <body>
-        <script src="/js/darkmode-js.min.js"></script>
-        
-        <script>
-            const options = {
-                bottom: '40px', // default: '32px'
-                right: 'unset', // default: '32px'
-                left: '42px', // default: 'unset'
-                time: '0.3s', // default: '0.3s'
-                mixColor: '#fff', // default: '#fff'
-                backgroundColor: ' #e4e4e4 ',  // default: '#fff'
-                buttonColorDark: '#100f2c',  // default: '#100f2c'
-                buttonColorLight: '#fff', // default: '#fff'
-                saveInCookies: true, // default: true,
-                label: '🌓', // default: ''
-                autoMatchOsTheme: true // default: true
-            }
-            const darkmode = new Darkmode(options);
-            darkmode.showWidget();
-        </script>
-        
-        
-            <div class="left-toc-container">
-                <nav id="toc" class="bs-docs-sidebar"></nav>
-            </div>
-        
-        <div class="paper">
-            
-            
-            
-            
-                <div class="shadow-drop-2-bottom paper-main">
-                    
-
-
-<div class="header">
-    <div class="header-container">
-        <img style="
-        width: 56px;
-        height: auto;" alt="^-^" cache-control="max-age=86400" class="header-img" src="/img/favicon.webp" width="10%"></img>
-        <div class="header-content">
-            <a class="logo" href="/">未语清</a> 
-            <span class="description"></span> 
-        </div>
-        
-    </div>
-    
-   
-    <ul class="nav">
-        
-            
-                <li><a href="/">首页</a></li>
-            
-        
-            
-                <li><a href="/list/">文章</a></li>
-            
-        
-            
-                <li><a href="/categories/">分类</a></li>
-            
-        
-            
-                <li><a href="/works/">作品</a></li>
-            
-        
-            
-                <li><a href="/times/">时光</a></li>
-            
-        
-            
-                <li><i>
-                    
-                        <a style="color: #4e7dde;" href="/reading/">读书笔记</a>
-                    
-                </i></li>
-            
-        
-    </ul>
-</div> 
-        
-                    
-                    
-
-                    
-                    
-                    
-                    <!--说明是文章post页面-->
-                    
-                        <div class="post-main">
-    
-
-    
-
-    
-
-    <div class="post-md">
-        
-            
-        
-        <div class=".article-gallery"><ul>
-<li><a href="/cmqlx5hca001cb8w6fxpkg45h/" title="《虚无主义》读书笔记">《虚无主义》诺伦·格尔茨</a></li>
-<li><a href="/cmqlx5hc4000nb8w62t9x2y9o/" title="《智变时代》读书笔记">《智变时代》芦义</a></li>
-<li><a href="/cmqlx5hc2000fb8w6hg2hb3ms/" title="《实践论》读书笔记">《实践论》毛泽东</a></li>
-<li><a href="/cmqlx5hc80011b8w6doc28p0f/" title="《筚路维艰》读书笔记">《筚路维艰：中国社会主义路径的五次选择》萧冬连</a></li>
-<li><a href="/cmqlx5hc1000ab8w616ev2t3g/" title="《人类简史》读书笔记">《人类简史：从动物到上帝》尤瓦尔·赫拉利</a></li>
-<li><a href="/cmqlx5hc80013b8w6540b88jf/" title="《矛盾论》读书笔记">《矛盾论》毛泽东</a></li>
-<li><a href="/cmqlx5hc7000wb8w6djf632f4/" title="《民主主义与教育》读书笔记">《民主主义与教育》约翰·杜威</a></li>
-<li><a href="/cmqlx5hc4000kb8w6cs26b497/" title="《后现代道德》读书笔记">《后现代道德》让-弗朗索瓦·利奥塔</a></li>
-<li><a href="/cmqlx5hc5000ob8w66h5k4o5c/" title="《普通语言学教程》读书笔记">《普通语言学教程》索绪尔</a></li>
-<li><a href="/cmqlx5hc3000jb8w61hsx1w1z/" title="《共产党宣言》读书笔记">《共产党宣言》马克思 恩格斯</a></li>
-<li><a href="/cmqlx5hca001ab8w6dt8f8zah/" title="《自我与无意识》读书笔记">《自我与无意识》卡尔·荣格</a></li>
-<li><a href="/cmqlx5hc6000rb8w68vi27knx/" title="《敞开：人与动物》读书笔记">《敞开：人与动物》吉奥乔·阿甘本</a></li>
-<li><a href="/cmqlx5hc2000db8w6blpuerj1/" title="《人人都该懂的认识论》读书笔记">《人人都该懂的认识论》罗伯特·马丁</a></li>
-<li><a href="/cmqlx5hc6000tb8w664lhg2vu/" title="《癔症研究》读书笔记">《癔症研究》弗洛伊德</a></li>
+<main>
+  <header class="article-header">
+    <h1 class="article-title">reading</h1>
+  </header>
+  <div class="article-body">
+    <ul>
+<li><a href="/cmqni7t1f001d4gw69u6db1u1/" title="《虚无主义》读书笔记">《虚无主义》诺伦·格尔茨</a></li>
+<li><a href="/cmqni7t18000f4gw68shwfet5/" title="《智变时代》读书笔记">《智变时代》芦义</a></li>
+<li><a href="/cmqni7t19000l4gw6272yekut/" title="《实践论》读书笔记">《实践论》毛泽东</a></li>
+<li><a href="/cmqni7t1c000y4gw68dcg6log/" title="《筚路维艰》读书笔记">《筚路维艰：中国社会主义路径的五次选择》萧冬连</a></li>
+<li><a href="/cmqni7t1b000r4gw6edu81xzp/" title="《人类简史》读书笔记">《人类简史：从动物到上帝》尤瓦尔·赫拉利</a></li>
+<li><a href="/cmqni7t1k002b4gw6dshceqdc/" title="《矛盾论》读书笔记">《矛盾论》毛泽东</a></li>
+<li><a href="/cmqni7t1a000p4gw6b8fr6i0b/" title="《民主主义与教育》读书笔记">《民主主义与教育》约翰·杜威</a></li>
+<li><a href="/cmqni7t17000d4gw60j1a2nmb/" title="《后现代道德》读书笔记">《后现代道德》让-弗朗索瓦·利奥塔</a></li>
+<li><a href="/cmqni7t1d00124gw62tilgu2b/" title="《普通语言学教程》读书笔记">《普通语言学教程》索绪尔</a></li>
+<li><a href="/cmqni7t1300034gw6d516dlay/" title="《共产党宣言》读书笔记">《共产党宣言》马克思 恩格斯</a></li>
+<li><a href="/cmqni7t1d00144gw61vnoe2jt/" title="《自我与无意识》读书笔记">《自我与无意识》卡尔·荣格</a></li>
+<li><a href="/cmqni7t1c000w4gw63g64hlm4/" title="《敞开：人与动物》读书笔记">《敞开：人与动物》吉奥乔·阿甘本</a></li>
+<li><a href="/cmqni7t1600084gw6120hhgpe/" title="《人人都该懂的认识论》读书笔记">《人人都该懂的认识论》罗伯特·马丁</a></li>
+<li><a href="/cmqni7t1c000u4gw6bui8fmo1/" title="《癔症研究》读书笔记">《癔症研究》弗洛伊德</a></li>
 </ul>
-</div>
-    </div>
 
-    <div class="post-meta">
-        <i>
-        
-        </i>
-    </div>
-    <br>
-    
-    
-        
-            
-    
-            <div class="post-footer-pre-next">
-                
-
-                
-            </div>
-    
-        
-    
-
-    
-        
-
-     
-</div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 未语清 · 保留所有权利</p>
+  </div>
+</footer>
 
 
-
-                                      
-                    
-                    
-                    <div class="footer">
-    
-        <span> 
-            © 1949-2023 China 
-
-            
-                
-
-            
-                
-                    / <a href="/friends/"> 友链 </a>
-                
-
-            
-        </span>
-       
-    
-</div>
-
-
-
-<!--这是指一条线往下的内容-->
-<div class="footer-last">
-    
-            <span>不念过往，不惧将来🌈</span>
-            
-    
-</div>
-
-
-    
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-
-    <!--目录-->
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" ></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript" ></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js" type="text/javascript" ></script>
-        
-<script src="/js/toc.js"></script>
-
-    
-
-    
-<script src="/js/randomHeaderContent.js"></script>
-
-    <!--回到顶部按钮-->
-    
-        
-<script src="/js/returnToTop.js"></script>
-
-    
-
-    
-        
-<script src="/js/returnToLastPage.js"></script>
-
-    
-
-
-
-
-
-<script src="/js/lightgallery/lightgallery.umd.min.js"></script>
-
-
-
-<script src="/js/lightgallery/plugins/lg-thumbnail.umd.min.js"></script>
-
-
-
-<script src="/js/lightgallery/plugins/lg-fullscreen.umd.min.js"></script>
-
-
-<script src="/js/lightgallery/plugins/lg-autoplay.umd.min.js"></script>
-
-
-<script src="/js/lightgallery/plugins/lg-zoom.umd.min.js"></script>
-
-
-<script src="/js/lightgallery/plugins/lg-rotate.umd.min.js"></script>
-
-
-<script src="/js/lightgallery/plugins/lg-paper.umd.min.js"></script>
-
-
-
-
-<script type="text/javascript">
-     
-    if (typeof lightGallery !== "undefined") {
-        var options1 = {
-            selector: '.gallery-item',
-            plugins: [lgThumbnail, lgFullscreen, lgAutoplay, lgZoom, lgRotate, lgPager], // 启用插件
-            thumbnail: true,          // 显示缩略图
-            zoom: true,               // 启用缩放功
-            rotate: true,             // 启用旋转功能能
-            autoplay: true,        // 启用自动播放功能
-            fullScreen: true,      // 启用全屏功能
-            pager: false, //页码,
-            zoomFromOrigin: true,   // 从原始位置缩放
-            actualSize: true,       // 启用查看实际大小的功能
-            enableZoomAfter: 300,    // 延迟缩放，确保图片加载完成后可缩放
-        };
-        lightGallery(document.getElementsByClassName('.article-gallery')[0], options1); // 修复选择器
-    }
-    
-</script>
-
-
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> 
-
-                </div>
-            
-            
-                <!-- 回到顶部的按钮-->  
-                <div class="progress-wrap shadow-drop-2-bottom">
-                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
-                    </svg>
-                </div>
-            
-            
-                <!-- 返回的按钮-->  
-                <div class="return-to-last-progress-wrap shadow-drop-2-bottom">
-                    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-                        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
-                    </svg>
-                </div>
-            
-    </body>
+<script src="/js/main.js"></script>
+</body>
 </html>
