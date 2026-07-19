@@ -3,7 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 在 CSS 加载前同步读取 localStorage，避免深色模式下的白色闪烁 -->
+<script>
+(function(){var k='shiyi-theme',s;try{s=localStorage.getItem(k)}catch(e){}if(s==='dark')document.documentElement.classList.add('dark');else if(!s&&window.matchMedia('(prefers-color-scheme:dark)').matches)document.documentElement.classList.add('dark')})();
+</script>
 <title>未语清 · Serene Whisper</title>
+
+<link rel="icon" href="/img/favicon.jpeg">
+<link rel="apple-touch-icon" href="/img/favicon.jpeg">
+
 <meta name="description" content="打捞时代褶皱，收藏日常微光。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,17 +25,30 @@
 <meta name="generator" content="Hexo 7.3.0"></head>
 <body>
 <div class="grain" aria-hidden="true"></div>
+
+<div class="top-bio">
+  <div class="wrap top-bio-inner">
+    <span class="top-bio-text">打捞时代褶皱，收藏日常微光。</span>
+  </div>
+</div>
+
+
 <header class="site-header">
   <div class="wrap header-inner">
-    <a href="/" class="site-name">未语清</a>
+    <div class="site-brand">
+      
+      <img class="site-avatar" src="/img/favicon.jpeg" alt="" width="32" height="32" loading="eager" decoding="async">
+      
+      <a href="/" class="site-name">未语清</a>
+    </div>
     <nav class="site-nav" aria-label="主导航">
       <a href="/" aria-current="page">文章</a>
       <span class="sep">/</span>
       <a href="/timeline/">时光</a>
       <span class="sep">/</span>
-      <a href="/vocabulary/">词汇</a>
-      <span class="sep">/</span>
       <a href="/archives/">归档</a>
+      <span class="sep">/</span>
+      <a href="/vocabulary/">词汇</a>
       <span class="sep">/</span>
       <a href="/about/">关于</a>
       <button class="theme-toggle" id="themeToggle" aria-label="切换深色模式" type="button">
@@ -40,15 +61,6 @@
 </header>
 
 <main>
-  <section class="wrap bio-section">
-  <svg class="seal-stamp" viewBox="0 0 44 44" aria-hidden="true">
-  <path d="M5 8 Q3 3 9 3 L35 4 Q41 5 40 11 L39 36 Q38 41 32 40 L7 39 Q2 38 3 33 Z"/>
-  <text x="22" y="28" text-anchor="middle">拾</text>
-</svg>
-
-  <p class="bio-line">打捞时代褶皱，收藏日常微光。</p>
-</section>
-
 
   <section class="wrap post-list" aria-label="文章列表">
     
@@ -60,7 +72,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmfg0020tcw6hmnf87tv/" class="post-title">十月三日随笔<span class="arrow">→</span></a>
+        <a href="/cmrrq900w001v18w6gjdbcqbl/" class="post-title">十月三日随笔<span class="arrow">→</span></a>
         <p class="post-excerpt">
 你只要明白，很不幸，大部分人都缺乏自我意识。
 ——《超脱》
@@ -77,7 +89,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmfe001qtcw64g448nt1/" class="post-title">关于自我探索<span class="arrow">→</span></a>
+        <a href="/cmrrq900v001n18w6dmj33y2c/" class="post-title">关于自我探索<span class="arrow">→</span></a>
         <p class="post-excerpt">不得不说，中间经历过太长时间的波折，过多的自我反思，越发感到形势是逐渐严峻的。于我而言，这一思考的过程，就是对现实解释的要素的极大增加。尽管今日，与一年前，两年前，几乎没有太多的变化，但是随着思考增加，内心当中的变化是…</p>
       </div>
     </article>
@@ -90,7 +102,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmfn003gtcw69cmu01k9/" class="post-title">游虫<span class="arrow">→</span></a>
+        <a href="/cmrrq901a003k18w6a989e4wa/" class="post-title">游虫<span class="arrow">→</span></a>
         <p class="post-excerpt">当水草淹没的时候
 他们并不留意
 就像他们落在水中
@@ -116,7 +128,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmfr004dtcw6gj369qqr/" class="post-title">装下一个世界<span class="arrow">→</span></a>
+        <a href="/cmrrq901f004h18w67jkxbkdq/" class="post-title">装下一个世界<span class="arrow">→</span></a>
         <p class="post-excerpt">一个人，像往常一样
 从一处到另一处
 不曾与什么交织
@@ -137,7 +149,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmfj002otcw6dldwawr1/" class="post-title">学习中的思维转换<span class="arrow">→</span></a>
+        <a href="/cmrrq9010002j18w62ao41z5g/" class="post-title">学习中的思维转换<span class="arrow">→</span></a>
         <p class="post-excerpt">学习这件事情，对很多人来说是困难的。有时候我也会觉得，学习真是反人类的，它就是一件需要花费很大功夫才能做好的事情。有一句话说，吃不了学习的苦，你就要吃生活的苦。话虽如此，然而你去到底层人群中看一看便知，很多人宁愿做着令…</p>
       </div>
     </article>
@@ -150,7 +162,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmfj002mtcw6epiv562r/" class="post-title">学科中的用词和翻译<span class="arrow">→</span></a>
+        <a href="/cmrrq9016002v18w60aa7cnyk/" class="post-title">学科中的用词和翻译<span class="arrow">→</span></a>
         <p class="post-excerpt">今天在学习线性代数时，由于看的是英文教材，对其中的一些术语的英语用词不甚了解。往常学习中已经习惯了中文的用词，看到这些英文难免还是有些糊涂。对其中的一些用词深入追究以后，能够发现一些有趣的事物。
 数学中的“标量”一词，…</p>
       </div>
@@ -164,7 +176,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmfe001ntcw6a9mn0blb/" class="post-title">中秋夜<span class="arrow">→</span></a>
+        <a href="/cmrrq900u001g18w6fmj31tw1/" class="post-title">中秋夜<span class="arrow">→</span></a>
         <p class="post-excerpt">树影凌乱，夜色薄凉
 流云淹没了月亮
 几点灯火不清不楚
@@ -190,7 +202,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmfn003itcw620gt1azg/" class="post-title">独居的意义<span class="arrow">→</span></a>
+        <a href="/cmrrq901a003o18w643ioh65q/" class="post-title">独居的意义<span class="arrow">→</span></a>
         <p class="post-excerpt">
 我们认为在人成为一个人之前，人与人之间不可能有真正的交流：因为如果要使自己能给予，一个人必须要在那痛苦的孤独中完全拥有自己，在这之外没有什么属于我们，也没有什么我们能给予……一个人甚至可以这样说，只要我一开始和自己交…</p>
       </div>
@@ -204,7 +216,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmfn003ktcw60nx92bug/" class="post-title">文思楼思文<span class="arrow">→</span></a>
+        <a href="/cmrrq9019003a18w62u7x3ht8/" class="post-title">文思楼思文<span class="arrow">→</span></a>
         <p class="post-excerpt">​	📝文思楼算是我写作的起点。最初，极度抑郁的那段日子，我坐在这里努力平静自己。也是在这里，我开始尝试写诗，我知道自己文笔不好，但我觉得这是一次尝试，也是一个开始。在这里，我似乎才真正的开始认识自己。
 ​	九月十一日…</p>
       </div>
@@ -218,7 +230,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmfa0011tcw6bvme34bo/" class="post-title">《矛盾论》读书笔记<span class="arrow">→</span></a>
+        <a href="/cmrrq900s001118w6dwjt0tci/" class="post-title">《矛盾论》读书笔记<span class="arrow">→</span></a>
         <p class="post-excerpt">笔记
  事物的矛盾法则，即对立统一的法则，是唯物辩证法的最根本的法则。
 

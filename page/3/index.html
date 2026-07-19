@@ -3,7 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 在 CSS 加载前同步读取 localStorage，避免深色模式下的白色闪烁 -->
+<script>
+(function(){var k='shiyi-theme',s;try{s=localStorage.getItem(k)}catch(e){}if(s==='dark')document.documentElement.classList.add('dark');else if(!s&&window.matchMedia('(prefers-color-scheme:dark)').matches)document.documentElement.classList.add('dark')})();
+</script>
 <title>未语清 · Serene Whisper</title>
+
+<link rel="icon" href="/img/favicon.jpeg">
+<link rel="apple-touch-icon" href="/img/favicon.jpeg">
+
 <meta name="description" content="打捞时代褶皱，收藏日常微光。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,17 +25,30 @@
 <meta name="generator" content="Hexo 7.3.0"></head>
 <body>
 <div class="grain" aria-hidden="true"></div>
+
+<div class="top-bio">
+  <div class="wrap top-bio-inner">
+    <span class="top-bio-text">打捞时代褶皱，收藏日常微光。</span>
+  </div>
+</div>
+
+
 <header class="site-header">
   <div class="wrap header-inner">
-    <a href="/" class="site-name">未语清</a>
+    <div class="site-brand">
+      
+      <img class="site-avatar" src="/img/favicon.jpeg" alt="" width="32" height="32" loading="eager" decoding="async">
+      
+      <a href="/" class="site-name">未语清</a>
+    </div>
     <nav class="site-nav" aria-label="主导航">
       <a href="/" aria-current="page">文章</a>
       <span class="sep">/</span>
       <a href="/timeline/">时光</a>
       <span class="sep">/</span>
-      <a href="/vocabulary/">词汇</a>
-      <span class="sep">/</span>
       <a href="/archives/">归档</a>
+      <span class="sep">/</span>
+      <a href="/vocabulary/">词汇</a>
       <span class="sep">/</span>
       <a href="/about/">关于</a>
       <button class="theme-toggle" id="themeToggle" aria-label="切换深色模式" type="button">
@@ -40,15 +61,6 @@
 </header>
 
 <main>
-  <section class="wrap bio-section">
-  <svg class="seal-stamp" viewBox="0 0 44 44" aria-hidden="true">
-  <path d="M5 8 Q3 3 9 3 L35 4 Q41 5 40 11 L39 36 Q38 41 32 40 L7 39 Q2 38 3 33 Z"/>
-  <text x="22" y="28" text-anchor="middle">拾</text>
-</svg>
-
-  <p class="bio-line">打捞时代褶皱，收藏日常微光。</p>
-</section>
-
 
   <section class="wrap post-list" aria-label="文章列表">
     
@@ -60,7 +72,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmfc001ctcw65jay6ngk/" class="post-title">《自我与无意识》读书笔记<span class="arrow">→</span></a>
+        <a href="/cmrrq900r000z18w6hji19e8x/" class="post-title">《自我与无意识》读书笔记<span class="arrow">→</span></a>
         <p class="post-excerpt">个体无意识与集体无意识弗洛伊德主张：无意识—因为本身的不协调性而备受潜抑（verdrängt）的婴儿期倾向（infantile Tendenzen）
 
 
@@ -76,7 +88,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmfo003mtcw6g2fn8k3n/" class="post-title">死亡谈话——文化艺术存在论<span class="arrow">→</span></a>
+        <a href="/cmrrq901b003s18w61dd0dcaj/" class="post-title">死亡谈话——文化艺术存在论<span class="arrow">→</span></a>
         <p class="post-excerpt">原作者：Bilibili@CoCoVii
 死亡一谈——恐惧、那位与你相伴一生的恋人第一次与死亡触及男孩所参与的葬礼揭示了理性当中的疯狂，揭示了生命的理性与死亡的疯狂之间的割裂。而葬礼的仪式过程，则弥合了这一裂痕。
 理性…</p>
@@ -91,7 +103,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmf5000dtcw615hodtzu/" class="post-title">《共产党宣言》读书笔记<span class="arrow">→</span></a>
+        <a href="/cmrrq900m000d18w62pqu8kpw/" class="post-title">《共产党宣言》读书笔记<span class="arrow">→</span></a>
         <p class="post-excerpt">引言
 共产主义者同盟成立于1847年，是一个由工人阶级组织的国际性革命团体，旨在推动社会主义和共产主义理念。
 
@@ -107,7 +119,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmf9000wtcw65bp6ajie/" class="post-title">《普通语言学教程》读书笔记<span class="arrow">→</span></a>
+        <a href="/cmrrq900w001q18w67husb6jr/" class="post-title">《普通语言学教程》读书笔记<span class="arrow">→</span></a>
         <p class="post-excerpt">绪论语言学史
 语法学：以逻辑为基础，缺乏科学性，目的是指定一些规则。
 语文学：确定、解释和评注各种文献，并进行文学史、风俗和制度等的研究。
@@ -126,7 +138,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmfi002jtcw67ncn71ek/" class="post-title">如其所如<span class="arrow">→</span></a>
+        <a href="/cmrrq900z002c18w64945bdfc/" class="post-title">如其所如<span class="arrow">→</span></a>
         <p class="post-excerpt">有的时候我会问自己，在这里写这样许多的文字，是否有它的意义。像许久以来，我们把自己内心的声音放在一处角落，那些声音，有的很幸运留了下来，留了很久，被后来的我们看见。有的可能只化作一缕灰烬，消失在不为人知的地方。但总的说…</p>
       </div>
     </article>
@@ -139,7 +151,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmf8000ptcw63bzz6xwy/" class="post-title">《后现代道德》读书笔记<span class="arrow">→</span></a>
+        <a href="/cmrrq900n000f18w63vfv914e/" class="post-title">《后现代道德》读书笔记<span class="arrow">→</span></a>
         <p class="post-excerpt">在读《文学理论》时了解到了后现代小说，颇有兴趣，于是便找来读了读这位后现代代表作家的作品，但无奈自己水平有限，未能从中读出后现代的主体思想，不过从前几个章节还是能读出许多现代城市化和工业化对艺术文化等领域的冲击，利奥塔…</p>
       </div>
     </article>
@@ -152,7 +164,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmfu0051tcw65h741zrr/" class="post-title">高岭之花<span class="arrow">→</span></a>
+        <a href="/cmrrq901i005118w64x9h3yr1/" class="post-title">高岭之花<span class="arrow">→</span></a>
         <p class="post-excerpt">攀着高枝肆意的叶
 在风中顺势作响
 缠绕了几百遍的麻
@@ -176,7 +188,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmfa000ztcw61czk73ic/" class="post-title">《民主主义与教育》读书笔记<span class="arrow">→</span></a>
+        <a href="/cmrrq900t001718w64fxvc77r/" class="post-title">《民主主义与教育》读书笔记<span class="arrow">→</span></a>
         <p class="post-excerpt">读后感到了大学后才慢慢开始反思，究竟什么是教育。过去十多年的读书生涯，究竟带给了我什么。长久以来，我都觉得自己在中学根本没学到些什么。似乎大家都在告诉你，要做作业，要刷题，要考试，要得高分，可是没人告诉你，学习究竟意味…</p>
       </div>
     </article>
@@ -189,7 +201,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmfn003etcw615e6eiu7/" class="post-title">核美学的心理意象<span class="arrow">→</span></a>
+        <a href="/cmrrq901a003i18w6hl2470fy/" class="post-title">核美学的心理意象<span class="arrow">→</span></a>
         <p class="post-excerpt">原作者：Bilibili@CoCoVii
 为什么越长大越是怀念过去？
 主题：探讨网络核美学中的心理意象
@@ -205,7 +217,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmfk002vtcw60ghe4k1o/" class="post-title">当代互联网的“焦虑”营销<span class="arrow">→</span></a>
+        <a href="/cmrrq9017002y18w6f70was64/" class="post-title">当代互联网的“焦虑”营销<span class="arrow">→</span></a>
         <p class="post-excerpt">随着时代的快速更迭，在互联网上有这样一块内容非常火热——个人成长。“社交恐惧”、“自律”、“精神内耗”等等这样一些标签的文章和视频，浏览量居高不下，足以见证当代年轻群体面对社会的飞速发展、内卷、个人主义盛行时，内心的焦…</p>
       </div>
     </article>

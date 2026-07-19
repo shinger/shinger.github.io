@@ -3,7 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 在 CSS 加载前同步读取 localStorage，避免深色模式下的白色闪烁 -->
+<script>
+(function(){var k='shiyi-theme',s;try{s=localStorage.getItem(k)}catch(e){}if(s==='dark')document.documentElement.classList.add('dark');else if(!s&&window.matchMedia('(prefers-color-scheme:dark)').matches)document.documentElement.classList.add('dark')})();
+</script>
 <title>未语清 · Serene Whisper</title>
+
+<link rel="icon" href="/img/favicon.jpeg">
+<link rel="apple-touch-icon" href="/img/favicon.jpeg">
+
 <meta name="description" content="打捞时代褶皱，收藏日常微光。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,17 +25,30 @@
 <meta name="generator" content="Hexo 7.3.0"></head>
 <body>
 <div class="grain" aria-hidden="true"></div>
+
+<div class="top-bio">
+  <div class="wrap top-bio-inner">
+    <span class="top-bio-text">打捞时代褶皱，收藏日常微光。</span>
+  </div>
+</div>
+
+
 <header class="site-header">
   <div class="wrap header-inner">
-    <a href="/" class="site-name">未语清</a>
+    <div class="site-brand">
+      
+      <img class="site-avatar" src="/img/favicon.jpeg" alt="" width="32" height="32" loading="eager" decoding="async">
+      
+      <a href="/" class="site-name">未语清</a>
+    </div>
     <nav class="site-nav" aria-label="主导航">
       <a href="/">文章</a>
       <span class="sep">/</span>
       <a href="/timeline/">时光</a>
       <span class="sep">/</span>
-      <a href="/vocabulary/">词汇</a>
-      <span class="sep">/</span>
       <a href="/archives/" aria-current="page">归档</a>
+      <span class="sep">/</span>
+      <a href="/vocabulary/">词汇</a>
       <span class="sep">/</span>
       <a href="/about/">关于</a>
       <button class="theme-toggle" id="themeToggle" aria-label="切换深色模式" type="button">
@@ -56,49 +77,49 @@
       
       <article class="archive-item">
         <time>七月 一日</time>
-        <a href="/cmr3mlmfl002ztcw64dpo8001/">微笑曲线的陷阱</a>
+        <a href="/cmrrq9017003018w66q0md1xg/">微笑曲线的陷阱</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>六月 二十六日</time>
-        <a href="/cmr3mlmfd001ltcw6dx2d4pr9/">关于汇率的一些记录和思考</a>
+        <a href="/cmrrq900w001s18w6h5g37ih0/">关于汇率的一些记录和思考</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>六月 二十日</time>
-        <a href="/cmr3mlmfk002xtcw6gz43aete/">当悲伤遗忘悲伤</a>
+        <a href="/cmrrq9019003g18w639nw2i9o/">当悲伤遗忘悲伤</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>四月 三日</time>
-        <a href="/cmr3mlmf30008tcw6by5n40g8/">《倦怠社会》读书笔记</a>
+        <a href="/cmrrq900i000318w612g83xzg/">《倦怠社会》读书笔记</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>三月 二十七日</time>
-        <a href="/cmr3mlmf10003tcw68ba3dxfp/">On dreams - Arrival or not</a>
+        <a href="/cmrrq900k000618w6as653ytz/">On dreams - Arrival or not</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>三月 十日</time>
-        <a href="/cmr3mlmfh002atcw6f3iect1k/">告别</a>
+        <a href="/cmrrq900z002e18w63vnw4k2v/">告别</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>一月 五日</time>
-        <a href="/cmr3mlmff001xtcw6enb3a9h6/">只有天知道</a>
+        <a href="/cmrrq900x002018w66epz9f1h/">只有天知道</a>
       </article>
     
       
@@ -107,77 +128,77 @@
       
       <article class="archive-item">
         <time>十二月 十六日</time>
-        <a href="/cmr3mlmfd001jtcw6ezkues2t/">从实践开始</a>
+        <a href="/cmrrq900v001l18w6fdcsd3ua/">从实践开始</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>五月 二十九日</time>
-        <a href="/cmr3mlmfr004htcw6h0vb66of/">记梦：火灾</a>
+        <a href="/cmrrq901f004f18w673qe6nb2/">记梦：火灾</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>五月 三日</time>
-        <a href="/cmr3mlmfs004jtcw6azqyhk0g/">记梦：退学</a>
+        <a href="/cmrrq901g004p18w63r5j1w9o/">记梦：退学</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>五月 一日</time>
-        <a href="/cmr3mlmfq0047tcw64cwz8y1q/">自我的幻觉</a>
+        <a href="/cmrrq901f004j18w6fne7gtxv/">自我的幻觉</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>四月 十日</time>
-        <a href="/cmr3mlmfc001atcw6big68tqu/">《知觉现象学》读书笔记</a>
+        <a href="/cmrrq900t001b18w66nc74z7s/">《知觉现象学》读书笔记</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>三月 二十七日</time>
-        <a href="/cmr3mlmey0001tcw6hu204zt2/">When I Die - Rumi</a>
+        <a href="/cmrrq900g000118w6bnb7d96z/">When I Die - Rumi</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>三月 二日</time>
-        <a href="/cmr3mlmfb0016tcw61qbu365b/">《胡塞尔现象学》读书笔记</a>
+        <a href="/cmrrq900s001318w6ebq1hlym/">《胡塞尔现象学》读书笔记</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>二月 十二日</time>
-        <a href="/cmr3mlmfo003stcw61sve1rrw/">王德峰《哲学导论》读书笔记</a>
+        <a href="/cmrrq901c003z18w67tnw5tmh/">王德峰《哲学导论》读书笔记</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>一月 二十九日</time>
-        <a href="/cmr3mlmfm003ctcw6cyy99lmq/">新瓶旧酒</a>
+        <a href="/cmrrq9019003e18w603te874r/">新瓶旧酒</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>一月 十八日</time>
-        <a href="/cmr3mlmfm0036tcw65j7z6tmt/">情境与游离：论人的断裂</a>
+        <a href="/cmrrq9017003218w6hb9w3dcf/">情境与游离：论人的断裂</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>一月 十七日</time>
-        <a href="/cmr3mlmf9000utcw633rdb4qr/">《癔症研究》读书笔记</a>
+        <a href="/cmrrq900q000v18w67bz34x3r/">《癔症研究》读书笔记</a>
       </article>
     
       
@@ -186,413 +207,413 @@
       
       <article class="archive-item">
         <time>十二月 二十八日</time>
-        <a href="/cmr3mlmf30006tcw60vlig5ta/">《人人都该懂的认识论》读书笔记</a>
+        <a href="/cmrrq900l000a18w6dy6229jh/">《人人都该懂的认识论》读书笔记</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>十二月 二十三日</time>
-        <a href="/cmr3mlmf6000ltcw6fn9h9pwm/">《敞开：人与动物》读书笔记</a>
+        <a href="/cmrrq900p000p18w6gcgj39vd/">《敞开：人与动物》读书笔记</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>十一月 二十五日</time>
-        <a href="/cmr3mlmfc001ctcw65jay6ngk/">《自我与无意识》读书笔记</a>
+        <a href="/cmrrq900r000z18w6hji19e8x/">《自我与无意识》读书笔记</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>十一月 二十三日</time>
-        <a href="/cmr3mlmfo003mtcw6g2fn8k3n/">死亡谈话——文化艺术存在论</a>
+        <a href="/cmrrq901b003s18w61dd0dcaj/">死亡谈话——文化艺术存在论</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>十一月 二十二日</time>
-        <a href="/cmr3mlmf5000dtcw615hodtzu/">《共产党宣言》读书笔记</a>
+        <a href="/cmrrq900m000d18w62pqu8kpw/">《共产党宣言》读书笔记</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>十一月 十八日</time>
-        <a href="/cmr3mlmf9000wtcw65bp6ajie/">《普通语言学教程》读书笔记</a>
+        <a href="/cmrrq900w001q18w67husb6jr/">《普通语言学教程》读书笔记</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>十一月 九日</time>
-        <a href="/cmr3mlmfi002jtcw67ncn71ek/">如其所如</a>
+        <a href="/cmrrq900z002c18w64945bdfc/">如其所如</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>十一月 二日</time>
-        <a href="/cmr3mlmf8000ptcw63bzz6xwy/">《后现代道德》读书笔记</a>
+        <a href="/cmrrq900n000f18w63vfv914e/">《后现代道德》读书笔记</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>十一月 二日</time>
-        <a href="/cmr3mlmfu0051tcw65h741zrr/">高岭之花</a>
+        <a href="/cmrrq901i005118w64x9h3yr1/">高岭之花</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>十月 十八日</time>
-        <a href="/cmr3mlmfa000ztcw61czk73ic/">《民主主义与教育》读书笔记</a>
+        <a href="/cmrrq900t001718w64fxvc77r/">《民主主义与教育》读书笔记</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>十月 十二日</time>
-        <a href="/cmr3mlmfn003etcw615e6eiu7/">核美学的心理意象</a>
+        <a href="/cmrrq901a003i18w6hl2470fy/">核美学的心理意象</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>十月 十日</time>
-        <a href="/cmr3mlmfk002vtcw60ghe4k1o/">当代互联网的“焦虑”营销</a>
+        <a href="/cmrrq9017002y18w6f70was64/">当代互联网的“焦虑”营销</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>十月 三日</time>
-        <a href="/cmr3mlmfg0020tcw6hmnf87tv/">十月三日随笔</a>
+        <a href="/cmrrq900w001v18w6gjdbcqbl/">十月三日随笔</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>九月 二十九日</time>
-        <a href="/cmr3mlmfe001qtcw64g448nt1/">关于自我探索</a>
+        <a href="/cmrrq900v001n18w6dmj33y2c/">关于自我探索</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>九月 二十九日</time>
-        <a href="/cmr3mlmfn003gtcw69cmu01k9/">游虫</a>
+        <a href="/cmrrq901a003k18w6a989e4wa/">游虫</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>九月 二十七日</time>
-        <a href="/cmr3mlmfr004dtcw6gj369qqr/">装下一个世界</a>
+        <a href="/cmrrq901f004h18w67jkxbkdq/">装下一个世界</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>九月 二十二日</time>
-        <a href="/cmr3mlmfj002otcw6dldwawr1/">学习中的思维转换</a>
+        <a href="/cmrrq9010002j18w62ao41z5g/">学习中的思维转换</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>九月 二十一日</time>
-        <a href="/cmr3mlmfj002mtcw6epiv562r/">学科中的用词和翻译</a>
+        <a href="/cmrrq9016002v18w60aa7cnyk/">学科中的用词和翻译</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>九月 十八日</time>
-        <a href="/cmr3mlmfe001ntcw6a9mn0blb/">中秋夜</a>
+        <a href="/cmrrq900u001g18w6fmj31tw1/">中秋夜</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>九月 十四日</time>
-        <a href="/cmr3mlmfn003itcw620gt1azg/">独居的意义</a>
+        <a href="/cmrrq901a003o18w643ioh65q/">独居的意义</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>九月 十一日</time>
-        <a href="/cmr3mlmfn003ktcw60nx92bug/">文思楼思文</a>
+        <a href="/cmrrq9019003a18w62u7x3ht8/">文思楼思文</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>九月 九日</time>
-        <a href="/cmr3mlmfa0011tcw6bvme34bo/">《矛盾论》读书笔记</a>
+        <a href="/cmrrq900s001118w6dwjt0tci/">《矛盾论》读书笔记</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>九月 八日</time>
-        <a href="/cmr3mlmf4000atcw68owbabe9/">《人类简史》读书笔记</a>
+        <a href="/cmrrq900k000818w6bglt5x64/">《人类简史》读书笔记</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>九月 四日</time>
-        <a href="/cmr3mlmfs004ntcw622j4cee6/">记梦：暴力组织</a>
+        <a href="/cmrrq901g004l18w6fpnw5fl2/">记梦：暴力组织</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>九月 三日</time>
-        <a href="/cmr3mlmfb0014tcw62k580u5l/">《筚路维艰》读书笔记</a>
+        <a href="/cmrrq900r000x18w641o52ycw/">《筚路维艰》读书笔记</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>九月 二日</time>
-        <a href="/cmr3mlmfr004btcw64px06nfn/">记梦：回不去的童年</a>
+        <a href="/cmrrq901e004d18w69qpnh32h/">记梦：回不去的童年</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>八月 三十日</time>
-        <a href="/cmr3mlmf5000ftcw6csja5x5n/">《实践论》读书笔记</a>
+        <a href="/cmrrq900n000j18w6aadnans1/">《实践论》读书笔记</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>八月 二十八日</time>
-        <a href="/cmr3mlmf8000rtcw64a786j9i/">《智变时代》读书笔记</a>
+        <a href="/cmrrq900q000s18w6c291hik8/">《智变时代》读书笔记</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>八月 二十七日</time>
-        <a href="/cmr3mlmfo003qtcw6enea7325/">用一粒沙观看</a>
+        <a href="/cmrrq901b003q18w6gzotatfj/">用一粒沙观看</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>八月 二十七日</time>
-        <a href="/cmr3mlmfp0041tcw68g3y2va3/">等一场雨</a>
+        <a href="/cmrrq901b003w18w67k6mcy5h/">等一场雨</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>八月 二十五日</time>
-        <a href="/cmr3mlmfm0038tcw65vuoax25/">房间</a>
+        <a href="/cmrrq9018003818w65z738ryb/">房间</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>八月 二十二日</time>
-        <a href="/cmr3mlmfi002ctcw6hq050peu/">夜晚，窗台</a>
+        <a href="/cmrrq900y002918w6bmky73sq/">夜晚，窗台</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>八月 二十一日</time>
-        <a href="/cmr3mlmfl0034tcw6cnrj3ylg/">感性与理性</a>
+        <a href="/cmrrq9018003718w6164ufp3k/">感性与理性</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>八月 二十日</time>
-        <a href="/cmr3mlmfq0045tcw60rvm2l09/">窗外</a>
+        <a href="/cmrrq901d004518w6dysjf1k5/">窗外</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>八月 十六日</time>
-        <a href="/cmr3mlmff001vtcw6955aa8sg/">博花闻物</a>
+        <a href="/cmrrq900x001x18w6gzfh8thz/">博花闻物</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>八月 十五日</time>
-        <a href="/cmr3mlmft004xtcw6fwr0d92o/">镜子</a>
+        <a href="/cmrrq901i005418w6dcmfds4j/">镜子</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>八月 十四日</time>
-        <a href="/cmr3mlmfc001etcw68ih437ex/">不必为人所知</a>
+        <a href="/cmrrq900t001918w63mho67tw/">不必为人所知</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>八月 十二日</time>
-        <a href="/cmr3mlmfs004ltcw6bwes7klg/">记童年一二</a>
+        <a href="/cmrrq901g004n18w6ey7vc9qm/">记童年一二</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>八月 十一日</time>
-        <a href="/cmr3mlmfp003wtcw669y1bor6/">白色手记</a>
+        <a href="/cmrrq901b003u18w64es4f32h/">白色手记</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>八月 九日</time>
-        <a href="/cmr3mlmft004ttcw68i2i37nn/">逃避自由</a>
+        <a href="/cmrrq901h004x18w60wrrb5on/">逃避自由</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>八月 七日</time>
-        <a href="/cmr3mlmfb0018tcw64qld3gdb/">《虚无主义》读书笔记</a>
+        <a href="/cmrrq900s001518w68x32e6av/">《虚无主义》读书笔记</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>八月 六日</time>
-        <a href="/cmr3mlmfg0022tcw69mlmahs9/">后上章</a>
+        <a href="/cmrrq900x002218w631wy7eku/">后上章</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>八月 三日</time>
-        <a href="/cmr3mlmfj002rtcw6b4regaaw/">强迫症</a>
+        <a href="/cmrrq9016002x18w6cszx5igo/">强迫症</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>八月 一日</time>
-        <a href="/cmr3mlmft004vtcw681tt1ki4/">读《你当像鸟飞往你的山》有感2</a>
+        <a href="/cmrrq901h004t18w6bht16gxq/">读《你当像鸟飞往你的山》有感2</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>八月 一日</time>
-        <a href="/cmr3mlmfm003atcw68jc7cdh3/">无人知晓的春天</a>
+        <a href="/cmrrq9019003c18w6hadu86by/">无人知晓的春天</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>七月 三十一日</time>
-        <a href="/cmr3mlmfq0043tcw64e39fznb/">纵火的风</a>
+        <a href="/cmrrq901d004718w6h5kf2e1f/">纵火的风</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>七月 二十八日</time>
-        <a href="/cmr3mlmft004ztcw62yc88bvd/">遗荒</a>
+        <a href="/cmrrq901i004z18w65tx6f797/">遗荒</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>七月 二十六日</time>
-        <a href="/cmr3mlmfp003ytcw66zfm4v3n/">空白的梦</a>
+        <a href="/cmrrq901c004318w6ft4eaqdx/">空白的梦</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>七月 二十五日</time>
-        <a href="/cmr3mlmfs004ptcw6ecdxaa37/">读《你当像鸟飞往你的山》有感1</a>
+        <a href="/cmrrq901g004r18w6597e3utd/">读《你当像鸟飞往你的山》有感1</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>七月 二十五日</time>
-        <a href="/cmr3mlmfh0027tcw60ctsdl5y/">命运研究室</a>
+        <a href="/cmrrq900y002518w63a5k9633/">命运研究室</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>七月 二十四日</time>
-        <a href="/cmr3mlmf6000jtcw659ki13lj/">《孤独传》读后感</a>
+        <a href="/cmrrq900o000l18w630cnfbbw/">《孤独传》读后感</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>七月 二十三日</time>
-        <a href="/cmr3mlmfr004ftcw63b5t0y52/">苦海</a>
+        <a href="/cmrrq901e004b18w6adl1bipg/">苦海</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>七月 十九日</time>
-        <a href="/cmr3mlmfd001gtcw67pkbc71q/">两块坟墓</a>
+        <a href="/cmrrq900u001e18w68q9e72m4/">两块坟墓</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>七月 十八日</time>
-        <a href="/cmr3mlmfk002ttcw659h9662a/">幸福的思考</a>
+        <a href="/cmrrq9016002w18w6bk695v81/">幸福的思考</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>七月 十六日</time>
-        <a href="/cmr3mlmfs004rtcw65hle0zrt/">读《孤独传》——浅谈孤独与爱情中的“缺失”</a>
+        <a href="/cmrrq901h004v18w6d30lf6z4/">读《孤独传》——浅谈孤独与爱情中的“缺失”</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>七月 八日</time>
-        <a href="/cmr3mlmfq0049tcw6ctbvb7x2/">被困于黑夜</a>
+        <a href="/cmrrq901d004918w624vge360/">被困于黑夜</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>七月 八日</time>
-        <a href="/cmr3mlmfo003otcw609256kak/">灵魂的高塔</a>
+        <a href="/cmrrq901a003m18w6frjibde4/">灵魂的高塔</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>七月 二日</time>
-        <a href="/cmr3mlmfi002htcw68fvof5c8/">孤独深处</a>
+        <a href="/cmrrq9010002m18w6gh1zd7gg/">孤独深处</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>一月 二十一日</time>
-        <a href="/cmr3mlmfh0025tcw69dupfzts/">在他人的眼中，照见真实的自己</a>
+        <a href="/cmrrq900y002718w62jw8f4wn/">在他人的眼中，照见真实的自己</a>
       </article>
     
       
@@ -601,28 +622,28 @@
       
       <article class="archive-item">
         <time>八月 三十日</time>
-        <a href="/cmr3mlmff001stcw6hxd58koe/">人生段落</a>
+        <a href="/cmrrq900u001i18w68p8a909k/">人生段落</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>八月 二十六日</time>
-        <a href="/cmr3mlmfl0031tcw6ef3o0662/">情有所寄，心有所依</a>
+        <a href="/cmrrq9018003518w6huezd4c9/">情有所寄，心有所依</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>八月 十四日</time>
-        <a href="/cmr3mlmfo003utcw6dzeqabny/">看云</a>
+        <a href="/cmrrq901c004118w68ajp0pgd/">看云</a>
       </article>
     
       
       
       <article class="archive-item">
         <time>一月 三十一日</time>
-        <a href="/cmr3mlmfi002etcw620f74998/">存储的持续性和链接性</a>
+        <a href="/cmrrq900z002h18w6hfqs0cyw/">存储的持续性和链接性</a>
       </article>
     
   </section>

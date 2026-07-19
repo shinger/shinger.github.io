@@ -3,7 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 在 CSS 加载前同步读取 localStorage，避免深色模式下的白色闪烁 -->
+<script>
+(function(){var k='shiyi-theme',s;try{s=localStorage.getItem(k)}catch(e){}if(s==='dark')document.documentElement.classList.add('dark');else if(!s&&window.matchMedia('(prefers-color-scheme:dark)').matches)document.documentElement.classList.add('dark')})();
+</script>
 <title>未语清 · Serene Whisper</title>
+
+<link rel="icon" href="/img/favicon.jpeg">
+<link rel="apple-touch-icon" href="/img/favicon.jpeg">
+
 <meta name="description" content="打捞时代褶皱，收藏日常微光。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,17 +25,30 @@
 <meta name="generator" content="Hexo 7.3.0"></head>
 <body>
 <div class="grain" aria-hidden="true"></div>
+
+<div class="top-bio">
+  <div class="wrap top-bio-inner">
+    <span class="top-bio-text">打捞时代褶皱，收藏日常微光。</span>
+  </div>
+</div>
+
+
 <header class="site-header">
   <div class="wrap header-inner">
-    <a href="/" class="site-name">未语清</a>
+    <div class="site-brand">
+      
+      <img class="site-avatar" src="/img/favicon.jpeg" alt="" width="32" height="32" loading="eager" decoding="async">
+      
+      <a href="/" class="site-name">未语清</a>
+    </div>
     <nav class="site-nav" aria-label="主导航">
       <a href="/" aria-current="page">文章</a>
       <span class="sep">/</span>
       <a href="/timeline/">时光</a>
       <span class="sep">/</span>
-      <a href="/vocabulary/">词汇</a>
-      <span class="sep">/</span>
       <a href="/archives/">归档</a>
+      <span class="sep">/</span>
+      <a href="/vocabulary/">词汇</a>
       <span class="sep">/</span>
       <a href="/about/">关于</a>
       <button class="theme-toggle" id="themeToggle" aria-label="切换深色模式" type="button">
@@ -40,15 +61,6 @@
 </header>
 
 <main>
-  <section class="wrap bio-section">
-  <svg class="seal-stamp" viewBox="0 0 44 44" aria-hidden="true">
-  <path d="M5 8 Q3 3 9 3 L35 4 Q41 5 40 11 L39 36 Q38 41 32 40 L7 39 Q2 38 3 33 Z"/>
-  <text x="22" y="28" text-anchor="middle">拾</text>
-</svg>
-
-  <p class="bio-line">打捞时代褶皱，收藏日常微光。</p>
-</section>
-
 
   <section class="wrap post-list" aria-label="文章列表">
     
@@ -60,7 +72,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmfi002etcw620f74998/" class="post-title">存储的持续性和链接性<span class="arrow">→</span></a>
+        <a href="/cmrrq900z002h18w6hfqs0cyw/" class="post-title">存储的持续性和链接性<span class="arrow">→</span></a>
         <p class="post-excerpt">持续性动态存储持续性在函数和代码块中定义的变量，随着函数的开始进行存储，结束自动释放只在函数和代码块内部具有生命期
 静态存储持续性在函数外或static关键字声明的变量在程序整个运行周期都存在
 链接性外部链接性在函数外…</p>

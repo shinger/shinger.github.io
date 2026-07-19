@@ -3,7 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 在 CSS 加载前同步读取 localStorage，避免深色模式下的白色闪烁 -->
+<script>
+(function(){var k='shiyi-theme',s;try{s=localStorage.getItem(k)}catch(e){}if(s==='dark')document.documentElement.classList.add('dark');else if(!s&&window.matchMedia('(prefers-color-scheme:dark)').matches)document.documentElement.classList.add('dark')})();
+</script>
 <title>未语清 · Serene Whisper</title>
+
+<link rel="icon" href="/img/favicon.jpeg">
+<link rel="apple-touch-icon" href="/img/favicon.jpeg">
+
 <meta name="description" content="打捞时代褶皱，收藏日常微光。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,17 +25,30 @@
 <meta name="generator" content="Hexo 7.3.0"></head>
 <body>
 <div class="grain" aria-hidden="true"></div>
+
+<div class="top-bio">
+  <div class="wrap top-bio-inner">
+    <span class="top-bio-text">打捞时代褶皱，收藏日常微光。</span>
+  </div>
+</div>
+
+
 <header class="site-header">
   <div class="wrap header-inner">
-    <a href="/" class="site-name">未语清</a>
+    <div class="site-brand">
+      
+      <img class="site-avatar" src="/img/favicon.jpeg" alt="" width="32" height="32" loading="eager" decoding="async">
+      
+      <a href="/" class="site-name">未语清</a>
+    </div>
     <nav class="site-nav" aria-label="主导航">
       <a href="/" aria-current="page">文章</a>
       <span class="sep">/</span>
       <a href="/timeline/">时光</a>
       <span class="sep">/</span>
-      <a href="/vocabulary/">词汇</a>
-      <span class="sep">/</span>
       <a href="/archives/">归档</a>
+      <span class="sep">/</span>
+      <a href="/vocabulary/">词汇</a>
       <span class="sep">/</span>
       <a href="/about/">关于</a>
       <button class="theme-toggle" id="themeToggle" aria-label="切换深色模式" type="button">
@@ -40,15 +61,6 @@
 </header>
 
 <main>
-  <section class="wrap bio-section">
-  <svg class="seal-stamp" viewBox="0 0 44 44" aria-hidden="true">
-  <path d="M5 8 Q3 3 9 3 L35 4 Q41 5 40 11 L39 36 Q38 41 32 40 L7 39 Q2 38 3 33 Z"/>
-  <text x="22" y="28" text-anchor="middle">拾</text>
-</svg>
-
-  <p class="bio-line">打捞时代褶皱，收藏日常微光。</p>
-</section>
-
 
   <section class="wrap post-list" aria-label="文章列表">
     
@@ -60,7 +72,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmfl002ztcw64dpo8001/" class="post-title">微笑曲线的陷阱<span class="arrow">→</span></a>
+        <a href="/cmrrq9017003018w66q0md1xg/" class="post-title">微笑曲线的陷阱<span class="arrow">→</span></a>
         <p class="post-excerpt">我仍然记得，微笑曲线是高考地理当中的一个常考点，考察的是对于产业布局和发展的理解能力。简单来说，就是产业链的上游研发设计和下游品牌营销占据了更高的附加值，而中游生产制造环节则位于低端低附加值的位置。然而当我们深入这个概…</p>
       </div>
     </article>
@@ -73,7 +85,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmfd001ltcw6dx2d4pr9/" class="post-title">关于汇率的一些记录和思考<span class="arrow">→</span></a>
+        <a href="/cmrrq900w001s18w6h5g37ih0/" class="post-title">关于汇率的一些记录和思考<span class="arrow">→</span></a>
         <p class="post-excerpt">
 本文的知识梳理主要来自于尾河真树的《汇率原来如此有趣》
 
@@ -92,7 +104,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmfk002xtcw6gz43aete/" class="post-title">当悲伤遗忘悲伤<span class="arrow">→</span></a>
+        <a href="/cmrrq9019003g18w639nw2i9o/" class="post-title">当悲伤遗忘悲伤<span class="arrow">→</span></a>
         <p class="post-excerpt">大四这一年，大概是我人生中变动最多的一年了。我也不曾想过，一个向来喜欢安稳的人怎么会一年遍地这么多城市？我分不清，是因为需要实习，所以到处走动呢？还是迫切想要远离这个我待了整整四年的大学，所以才去实习呢？如今我已经是不…</p>
       </div>
     </article>
@@ -105,7 +117,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmf30008tcw6by5n40g8/" class="post-title">《倦怠社会》读书笔记<span class="arrow">→</span></a>
+        <a href="/cmrrq900i000318w612g83xzg/" class="post-title">《倦怠社会》读书笔记<span class="arrow">→</span></a>
         <p class="post-excerpt">今天的社会有一个很大的特点就是它的生产方式必须建立在完全的个体的积极主动性上，如果没有个体主观能动性的极大激发，今天的社会或许无法运行。这一特别的生产方式或许还并没有成为普遍现象，但至少会是未来的趋势。上世纪许多国家通…</p>
       </div>
     </article>
@@ -118,7 +130,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmf10003tcw68ba3dxfp/" class="post-title">On dreams - Arrival or not<span class="arrow">→</span></a>
+        <a href="/cmrrq900k000618w6as653ytz/" class="post-title">On dreams - Arrival or not<span class="arrow">→</span></a>
         <p class="post-excerpt">Last night I got an anxious dream. I dreamed I ended my school and went home. I don’t konw how did I got my h…</p>
       </div>
     </article>
@@ -131,7 +143,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmfh002atcw6f3iect1k/" class="post-title">告别<span class="arrow">→</span></a>
+        <a href="/cmrrq900z002e18w63vnw4k2v/" class="post-title">告别<span class="arrow">→</span></a>
         <p class="post-excerpt">向身边的人说再见的时候发现他们的可爱大概是他们变小了吧我不能挥手因为我们并未相识我只是这样走了尽管轻悄可是敲打自己的，不只是振动告别是本不该留恋的因为我们不曾属于过哪里让春天自己离开吧别让它再追上谁的脚步在我眼前的从不…</p>
       </div>
     </article>
@@ -144,7 +156,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmff001xtcw6enb3a9h6/" class="post-title">只有天知道<span class="arrow">→</span></a>
+        <a href="/cmrrq900x002018w66epz9f1h/" class="post-title">只有天知道<span class="arrow">→</span></a>
         <p class="post-excerpt">又过去一年了，谁晓得时间真的惦记些什么？或许我可以不去抬头望望月亮，只是将自己的梦做的久一些就够了，可是时间毕竟不饶人。当你身边真的没有可以说说话的人，你会不会感到孤独？我想至少不必，因为那是矫情的，但不曾想过的是，我…</p>
       </div>
     </article>
@@ -157,7 +169,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmfd001jtcw6ezkues2t/" class="post-title">从实践开始<span class="arrow">→</span></a>
+        <a href="/cmrrq900v001l18w6fdcsd3ua/" class="post-title">从实践开始<span class="arrow">→</span></a>
         <p class="post-excerpt">
 人们自己创造自己的历史，但是他们并不是随心所欲地创造，并不是在他们自己选定的条件下创造，而是在直接碰到的、既定的、从过去承继下来的条件下创造。                                ——马克思…</p>
       </div>
@@ -171,7 +183,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmfr004htcw6h0vb66of/" class="post-title">记梦：火灾<span class="arrow">→</span></a>
+        <a href="/cmrrq901f004f18w673qe6nb2/" class="post-title">记梦：火灾<span class="arrow">→</span></a>
         <p class="post-excerpt">进入到弗洛伊德的视野后，我对梦的关注尤为强烈了。我很难说那些荒诞而破碎的梦中之境对我有何种重要意义，但是这似乎已是为数不多的独属于我的个性经验了，尽管它看起来是那样虚幻。我相信梦和现实是同等的重要，如我们日常那些虚妄的…</p>
       </div>
     </article>
@@ -184,7 +196,7 @@
         
       </div>
       <div>
-        <a href="/cmr3mlmfs004jtcw6azqyhk0g/" class="post-title">记梦：退学<span class="arrow">→</span></a>
+        <a href="/cmrrq901g004p18w63r5j1w9o/" class="post-title">记梦：退学<span class="arrow">→</span></a>
         <p class="post-excerpt">现在我可以看到一切欲望是如何凝定在他者的语言当中的，以及那些内心的冲突是怎样带给一个人以无限的失败的。
 昨晚我和朋友聊到在家躺平的事。如果我在毕业后没能找到一份工作，我想我会欣然接受那样的无所事事。我以为我的价值无法在…</p>
       </div>
