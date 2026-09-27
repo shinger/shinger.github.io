@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 在 CSS 加载前同步读取 localStorage，避免深色模式下的白色闪烁 -->
+<script>
+(function(){var k='shiyi-theme',s;try{s=localStorage.getItem(k)}catch(e){}if(s==='dark')document.documentElement.classList.add('dark');else if(!s&&window.matchMedia('(prefers-color-scheme:dark)').matches)document.documentElement.classList.add('dark')})();
+</script>
+<title>科斯定理与菲勒普斯曲线 · 未语清</title>
+
+<link rel="icon" href="/img/favicon.jpeg">
+<link rel="apple-touch-icon" href="/img/favicon.jpeg">
+
+<meta name="description" content="打捞时代褶皱，收藏日常微光。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+<style>
+  :root{ --accent: #AD3B26; }
+  html.dark{ --accent: #D2654C; }
+</style>
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<div class="top-bio">
+  <div class="wrap top-bio-inner">
+    <span class="top-bio-text">打捞时代褶皱，收藏日常微光。</span>
+  </div>
+</div>
+
+
+<header class="top-bar">
+  <a href="javascript:history.back()" class="back-link">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+    <svg class="seal-stamp seal-mini" viewBox="0 0 44 44" aria-hidden="true">
+  <path d="M5 8 Q3 3 9 3 L35 4 Q41 5 40 11 L39 36 Q38 41 32 40 L7 39 Q2 38 3 33 Z"/>
+  <text x="22" y="28" text-anchor="middle">拾</text>
+</svg>
+
+    未语清
+  </a>
+  <div class="top-bar-actions">
+    <button class="share-dl-btn" id="shareDlBtn" aria-label="下载分享卡片" type="button">
+      <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+    </button>
+    <button class="theme-toggle" id="themeToggle" aria-label="切换深色模式" type="button">
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.4 4.4l1.7 1.7M17.9 17.9l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.4 19.6l1.7-1.7M17.9 6.1l1.7-1.7"/></svg>
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5z"/></svg>
+</button>
+
+  </div>
+</header>
+
+<main>
+  <article>
+    <header class="article-header">
+      
+      <span class="kicker">世衡</span>
+      
+      <h1 class="article-title">科斯定理与菲勒普斯曲线</h1>
+      <p class="article-meta">
+        未语清<span class="sep">/</span>二零二六年 九月 二十七日<span class="sep">/</span>约 700 字<span class="sep">/</span>阅读约 2 分钟
+      </p>
+    </header>
+
+    
+    <div class="article-body dropcap">
+      <p>科斯定理：在交易成本为零的前提下，无论初始产权归谁，只要产权界定清晰，市场各方可以通过自愿谈判交易，最终会达到资源最优配置（社会总福利最大）。</p>
+<p>这里需要注意一点，资源最优配置并不意味着公平，它只代表社会整体效率最高，所以即使交易成本为零，也不意味着产权可以随意分配。其次，该理论本身是理想化假设，现实中交易成本往往大于零，那么此时如何分配产权就决定如何达到资源配置效率最大了，所以才需要引入外部决策机制（如政府、法院等）。</p>
+<p>菲利普斯曲线表明通胀与失业率存在替代关系，也就是高通胀下失业率会降低，然而滞胀却出现了高通胀与高失业率并存的情况（通胀预期的存在使得工人预期未来物价会上涨，因此要求更高的工资）。凯恩斯主义认同这套机制，一方面认为因为价格存在刚性所以货币宽松下工资不会自动上涨，另一方面认为总需求不足导致总供给过剩，所以需要通过货币政策刺激需求。这一观点受到卢卡斯代表的理性预期学派的批判，认为其没有微观基础。而新凯恩斯主义则提出了价格粘性，也就是价格会变动，但具有滞后性。学界研究表明，商品越同质化，交易成本越低，价格粘性越低，产品价格变动频繁；商品越异质化，交易成本越高，价格粘性越高。典型的如钢铁、石油、小麦等大宗商品，价格变动大，而像电子产品、家电等往往价格更稳定（我们可能会觉得电子产品每年都在降价，但这一方面受技术进步推动，另一方面它并不像大宗商品那样一天一价，而是缓慢降价）。从这一点来看，我们可以大致推断，大宗商品市场更容易达到更高的资源配置效率。比较容易误解的是认为股票交易市场更容易达到更高的资源配置效率，虽然股市交易几乎无成本，流动性高，股价波动大，但是股市存在巨大的信息差成本，投资者需要大量时间去搜寻信息判断哪支股票利益最大化。并且，投资一方面还受到市场情绪的干扰，投资人的决策往往并非基于绝对的理性策略。</p>
+
+    </div>
+
+    <p class="article-end">◆</p>
+
+    <nav class="post-nav" aria-label="上一篇与下一篇">
+      <span></span>
+      
+      <a class="next" href="/cmt558ai90019e0w63phea31l/">
+        <span class="label">下一篇 →</span>
+        <span class="title">《经济学家到底在想什么》读书笔记</span>
+      </a>
+      
+    </nav>
+  </article>
+</main>
+<div class="share-modal" id="shareModal" aria-hidden="true">
+  <div class="share-overlay"></div>
+  <div class="share-dialog" role="dialog" aria-label="文章分享卡片预览">
+    <button class="share-close" id="shareClose" aria-label="关闭" type="button">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+
+    <div class="share-card" id="shareCard">
+      <div class="share-card-inner">
+        <div class="share-card-site">未语清</div>
+        <h2 class="share-card-title">科斯定理与菲勒普斯曲线</h2>
+        <div class="share-card-meta">
+          <span>未语清</span>
+          <span class="sep">/</span>
+          <span>二零二六年 九月 二十七日</span>
+          <span class="sep">/</span>
+          <span>约 700 字</span>
+        </div>
+        <div class="share-card-divider">◆</div>
+        
+        <div class="share-card-body dropcap">
+          <p>科斯定理：在交易成本为零的前提下，无论初始产权归谁，只要产权界定清晰，市场各方可以通过自愿谈判交易，最终会达到资源最优配置（社会总福利最大）。</p>
+<p>这里需要注意一点，资源最优配置并不意味着公平，它只代表社会整体效率最高，所以即使交易成本为零，也不意味着产权可以随意分配。其次，该理论本身是理想化假设，现实中交易成本往往大于零，那么此时如何分配产权就决定如何达到资源配置效率最大了，所以才需要引入外部决策机制（如政府、法院等）。</p>
+<p>菲利普斯曲线表明通胀与失业率存在替代关系，也就是高通胀下失业率会降低，然而滞胀却出现了高通胀与高失业率并存的情况（通胀预期的存在使得工人预期未来物价会上涨，因此要求更高的工资）。凯恩斯主义认同这套机制，一方面认为因为价格存在刚性所以货币宽松下工资不会自动上涨，另一方面认为总需求不足导致总供给过剩，所以需要通过货币政策刺激需求。这一观点受到卢卡斯代表的理性预期学派的批判，认为其没有微观基础。而新凯恩斯主义则提出了价格粘性，也就是价格会变动，但具有滞后性。学界研究表明，商品越同质化，交易成本越低，价格粘性越低，产品价格变动频繁；商品越异质化，交易成本越高，价格粘性越高。典型的如钢铁、石油、小麦等大宗商品，价格变动大，而像电子产品、家电等往往价格更稳定（我们可能会觉得电子产品每年都在降价，但这一方面受技术进步推动，另一方面它并不像大宗商品那样一天一价，而是缓慢降价）。从这一点来看，我们可以大致推断，大宗商品市场更容易达到更高的资源配置效率。比较容易误解的是认为股票交易市场更容易达到更高的资源配置效率，虽然股市交易几乎无成本，流动性高，股价波动大，但是股市存在巨大的信息差成本，投资者需要大量时间去搜寻信息判断哪支股票利益最大化。并且，投资一方面还受到市场情绪的干扰，投资人的决策往往并非基于绝对的理性策略。</p>
+
+        </div>
+        <div class="share-card-divider">◆</div>
+        <div class="share-card-footer">
+          <span>拾遗</span>
+          <span class="sep">·</span>
+          <span>打捞时代褶皱，收藏日常微光。</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="share-actions">
+      <button class="share-theme-btn" id="shareThemeToggle" aria-label="切换卡片日/夜模式" type="button">
+        <svg class="icon-light" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.4 4.4l1.7 1.7M17.9 17.9l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.4 19.6l1.7-1.7M17.9 6.1l1.7-1.7"/></svg>
+        <svg class="icon-dark" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5z"/></svg>
+      </button>
+      <button class="share-confirm-btn" id="shareDownload" aria-label="下载卡片图片" type="button">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script src="/js/share-card.js"></script>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
